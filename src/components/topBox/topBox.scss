@@ -1,0 +1,40 @@
+.topBox{
+    .user{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+
+         .userData{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            img{
+                width: 38px;
+                height: 38px;
+                border-radius: 9999px;
+            }
+
+            .data {
+                p{
+                    &:first-child{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    &:last-child{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .account {
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+   
+}

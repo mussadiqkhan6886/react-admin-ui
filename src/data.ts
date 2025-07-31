@@ -114,3 +114,55 @@ export const menu = [
         ]
     },
 ]
+
+export const topDealUsers = [
+    {
+        id: 1,
+        img: "noavatar.png",
+        username: "ELva McDonald",
+        email: "elva@gmail.com",
+        account: "3.668"
+    },
+    {
+        id: 2,
+        img: "noavatar.png",
+        username: "Linnie Nelson",
+        email: "linnie@gmail.com",
+        account: "3.258"
+    },
+    {
+        id: 3,
+        img: "noavatar.png",
+        username: "Brent Reeves",
+        email: "brent@gmail.com",
+        account: "2.999"
+    },
+    {
+        id: 4,
+        img: "noavatar.png",
+        username: "Juan Harington",
+        email: "juan@gmail.com",
+        account: "2.134"
+    },
+    {
+        id: 5,
+        img: "noavatar.png",
+        username: "Adeline Watson",
+        email: "adeline@gmail.com",
+        account: "2.512"
+    },
+    {
+        id: 6,
+        img: "noavatar.png",
+        username: "Mussadiq Khan",
+        email: "mk@gmail.com",
+        account: "1.668"
+    },
+    {
+        id: 7,
+        img: "noavatar.png",
+        username: "Heaven",
+        email: "heaven@gmail.com",
+        account: "3.998"
+    },
+]

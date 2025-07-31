@@ -20,7 +20,7 @@ const Menu = () => {
     <div className="menu">
       {menu.map((item: Item) => (
       <div key={item.id} className="item">
-        <span className="title">{item.title}</span>
+        <span className="title">{item.title.toUpperCase()}</span>
         {item.listItems.map((listItem: ListItem) => (
           <Link to={"/"} key={listItem.id} className="listItem">
             <img src={listItem.icon} alt="icon" />
