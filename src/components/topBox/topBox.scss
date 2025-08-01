@@ -1,4 +1,12 @@
+@import "../../styles/responsive.scss";
+
 .topBox{
+
+    .heading{
+        @include xl{
+            font-size: 23px;
+        }
+    }
     .user{
         display: flex;
         justify-content: space-between;
@@ -16,6 +24,13 @@
                 border-radius: 9999px;
                 object-fit: cover;
                 object-position: top;
+
+                @include xl{
+                    display: none;
+                }
+                @include lg{
+                    display: block;
+                }
             }
 
             .data {
@@ -27,6 +42,12 @@
 
                     &:last-child{
                         font-size: 12px;
+                         @include xl{
+                            display: none;
+                        }
+                        @include lg{
+                            display: block;
+                        }
                     }
                 }
             }
