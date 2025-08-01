@@ -6,7 +6,7 @@ import { products } from "../../data";
 import "./products.scss"
 
 const columns: GridColDef[] = [
-  { field: "id", headerName: "ID", width: 90 },
+  { field: "id", headerName: "ID", width: 80 },
   {
     field: "img",
     headerName: "Image",
@@ -19,36 +19,36 @@ const columns: GridColDef[] = [
     field: "title",
     type: "string",
     headerName: "Title",
-    width: 250,
+    width: 230,
   },
   {
     field: "color",
     type: "string",
     headerName: "Color",
-    width: 150,
+    width: 110,
   },
   {
     field: "price",
     type: "string",
     headerName: "Price",
-    width: 200,
+    width: 130,
   },
   {
     field: "producer",
     headerName: "Producer",
     type: "string",
-    width: 200,
+    width: 100,
   },
   {
     field: "createdAt",
     headerName: "Created At",
-    width: 200,
+    width: 100,
     type: "string",
   },
   {
     field: "inStock",
     headerName: "In Stock",
-    width: 150,
+    width: 120,
     type: "boolean",
   },
 ];
