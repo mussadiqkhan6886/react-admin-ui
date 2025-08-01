@@ -8,7 +8,7 @@ const TopBox = () => {
         img: string
         username: string
         email: string
-        account: string
+        amount: string
     }
 
   return (
@@ -24,7 +24,7 @@ const TopBox = () => {
                 </div>
             </div>
             <div className="account">
-                ${user.account}
+                ${user.amount}
             </div>
         </div>
       ))}

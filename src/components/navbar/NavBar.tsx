@@ -16,7 +16,7 @@ const NavBar = () => {
           <span>1</span>
         </div>
         <div className="user">
-          <img src="" alt="user profile img" />
+          <img src="/user.jpg" alt="user profile img" />
           <span>Mussadiq</span>
         </div>
         <img src="/settings.svg" alt="setting" className="icon" />

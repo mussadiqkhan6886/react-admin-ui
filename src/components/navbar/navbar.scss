@@ -20,6 +20,13 @@
         align-items: center;
         gap: 20px;
 
+        .user{
+
+            img{
+                object-position: top;
+            }
+        }
+
         .icon{
             padding: 0.5rem;
             
