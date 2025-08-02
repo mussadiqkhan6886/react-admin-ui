@@ -1912,710 +1912,309 @@ export const allUsers = [
 
 export const allProducts = [
   {
-    "id": 1,
-    "img": "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png",
-    "title": "Playstation 5 Digital Edition",
-    "color": "white",
-    "producer": "Sony",
-    "price": "$250.99",
-    "createdAt": "01.02.2023",
-    "inStock": true,
-    "info": {
-      "color": "white",
-      "producer": "Sony",
-      "inStock": true
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
+    id: 1,
+    title: "Playstation 5 Digital Edition",
+    img: "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png",
+    color: "white",
+    producer: "Sony",
+    price: "$250.99",
+    createdAt: "01.02.2023",
+    inStock: true,
+    info: { color: "white", producer: "Sony", inStock: true },
+    chart: {
+      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      data: [
+        { name: "Jan", Visits: 1234 },
+        { name: "Feb", Visits: 980 },
+        { name: "Mar", Visits: 1602 },
+        { name: "Apr", Visits: 1344 },
+        { name: "May", Visits: 845 },
+        { name: "Jun", Visits: 1576 }
       ]
     },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+    activities: [
+      { text: "Playstation 5 Digital Edition bought by Brent Reeves", time: "27.07.2025" },
+      { text: "Playstation 5 Digital Edition added to wishlist by Linnie Nelson", time: "21.07.2025" },
+      { text: "Playstation 5 Digital Edition featured in promo sale", time: "17.07.2025" },
+      { text: "Playstation 5 Digital Edition restocked", time: "11.07.2025" },
+      { text: "Playstation 5 Digital Edition reviewed by Mussadiq", time: "05.07.2025" }
     ]
   },
   {
-    "id": 2,
-    "img": "https://www.pngmart.com/files/6/Dell-Laptop-PNG-Image.png",
-    "title": "Dell Laptop KR211822",
-    "color": "black",
-    "producer": "Dell",
-    "price": "$499.99",
-    "createdAt": "01.02.2023",
-    "inStock": true,
-    "info": {
-      "color": "black",
-      "producer": "Dell",
-      "inStock": true
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
+    id: 2,
+    title: "Dell Laptop KR211822",
+    img: "https://www.pngmart.com/files/6/Dell-Laptop-PNG-Image.png",
+    color: "black",
+    producer: "Dell",
+    price: "$499.99",
+    createdAt: "01.02.2023",
+    inStock: true,
+    info: { color: "black", producer: "Dell", inStock: true },
+    chart: {
+      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      data: [
+        { name: "Jan", Visits: 890 },
+        { name: "Feb", Visits: 1123 },
+        { name: "Mar", Visits: 1589 },
+        { name: "Apr", Visits: 1784 },
+        { name: "May", Visits: 940 },
+        { name: "Jun", Visits: 1010 }
       ]
     },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+    activities: [
+      { text: "Dell Laptop KR211822 reviewed by Elva McDonald", time: "28.07.2025" },
+      { text: "Dell Laptop KR211822 added to cart by Angel Thomas", time: "22.07.2025" },
+      { text: "Dell Laptop KR211822 bought by Juan Harrington", time: "17.07.2025" },
+      { text: "Dell Laptop KR211822 marked as favorite by Adeline Watson", time: "13.07.2025" },
+      { text: "Dell Laptop KR211822 shared by Linnie Nelson", time: "09.07.2025" }
     ]
   },
   {
-    "id": 3,
-    "img": "http://images.samsung.com/is/image/samsung/uk-led-tv-hg40ed670ck-hg40ed670ckxxu-001-front",
-    "title": "Samsung TV 4K SmartTV",
-    "color": "gray",
-    "producer": "Samsung",
-    "price": "$999.49",
-    "createdAt": "01.02.2023",
-    "inStock": true,
-    "info": {
-      "color": "gray",
-      "producer": "Samsung",
-      "inStock": true
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
+    id: 3,
+    img: "http://images.samsung.com/is/image/samsung/uk-led-tv-hg40ed670ck-hg40ed670ckxxu-001-front",
+    title: "Samsung TV 4K SmartTV",
+    color: "gray",
+    producer: "Samsung",
+    price: "$999.00",
+    createdAt: "01.02.2023",
+    inStock: true,
+    info: { color: "purple", producer: "Apple", inStock: true },
+    chart: {
+      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      data: [
+        { name: "Jan", Visits: 1540 },
+        { name: "Feb", Visits: 1470 },
+        { name: "Mar", Visits: 1320 },
+        { name: "Apr", Visits: 1755 },
+        { name: "May", Visits: 1611 },
+        { name: "Jun", Visits: 1902 }
       ]
     },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+    activities: [
+      { text: "Apple iPhone 14 Pro Max added to wishlist by Brent Reeves", time: "28.07.2025" },
+      { text: "Apple iPhone 14 Pro Max rated 5 stars by Angel Thomas", time: "23.07.2025" },
+      { text: "Apple iPhone 14 Pro Max returned by Elva McDonald", time: "18.07.2025" },
+      { text: "Apple iPhone 14 Pro Max bought by Mussadiq", time: "13.07.2025" },
+      { text: "Apple iPhone 14 Pro Max featured in newsletter", time: "07.07.2025" }
     ]
   },
   {
-    "id": 4,
-    "img": "https://raylo.imgix.net/iphone-14-blue.png",
-    "title": "Apple Iphone 14 Pro Max",
-    "color": "white",
-    "producer": "Apple",
-    "price": "$799.49",
-    "createdAt": "01.02.2023",
-    "inStock": true,
-    "info": {
-      "color": "white",
-      "producer": "Apple",
-      "inStock": true
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
+    id: 4,
+     img: "https://www.signify.com/b-dam/signify/en-aa/about/news/2020/20200903-movie-night-essentials-popcorn-ice-cream-and-the-new-philips-hue-play-gradient-lightstrip/packaging-lighstrip.png",
+    title: "Philips Hue Play Gradient",
+    color: "rainbow",
+    producer: "Philips",
+    price: "$1599.00",
+    createdAt: "01.02.2023",
+    inStock: true,
+    info: { color: "gray", producer: "Apple", inStock: true },
+    chart: {
+      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      data: [
+        { name: "Jan", Visits: 990 },
+        { name: "Feb", Visits: 1230 },
+        { name: "Mar", Visits: 1495 },
+        { name: "Apr", Visits: 1105 },
+        { name: "May", Visits: 1670 },
+        { name: "Jun", Visits: 1430 }
       ]
     },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+    activities: [
+      { text: "MacBook Pro M2 2022 shared by Adeline Watson", time: "27.07.2025" },
+      { text: "MacBook Pro M2 2022 added to wishlist by Juan Harrington", time: "22.07.2025" },
+      { text: "MacBook Pro M2 2022 rated by Linnie Nelson", time: "16.07.2025" },
+      { text: "MacBook Pro M2 2022 reviewed by Brent Reeves", time: "11.07.2025" },
+      { text: "MacBook Pro M2 2022 viewed by Elva McDonald", time: "06.07.2025" }
     ]
   },
   {
-    "id": 5,
-    "img": "https://www.signify.com/b-dam/signify/en-aa/about/news/2020/20200903-movie-night-essentials-popcorn-ice-cream-and-the-new-philips-hue-play-gradient-lightstrip/packaging-lighstrip.png",
-    "title": "Philips Hue Play Gradient",
-    "color": "rainbow",
-    "producer": "Philips",
-    "price": "$39.99",
-    "createdAt": "01.02.2023",
-    "info": {
-      "color": "rainbow",
-      "producer": "Philips",
-      "inStock": false
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
+    id: 5,
+     img: "https://raylo.imgix.net/iphone-14-blue.png",
+    title: "Apple Iphone 14 Pro Max",
+    color: "white",
+    producer: "Apple",
+    price: "$299.99",
+    createdAt: "01.02.2023",
+    inStock: true,
+    info: { color: "black", producer: "Sony", inStock: true },
+    chart: {
+      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      data: [
+        { name: "Jan", Visits: 870 },
+        { name: "Feb", Visits: 780 },
+        { name: "Mar", Visits: 920 },
+        { name: "Apr", Visits: 1150 },
+        { name: "May", Visits: 1345 },
+        { name: "Jun", Visits: 1299 }
       ]
     },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+    activities: [
+      { text: "Sony WH-1000XM4 rated by Angel Thomas", time: "26.07.2025" },
+      { text: "Sony WH-1000XM4 bought by Juan Harrington", time: "20.07.2025" },
+      { text: "Sony WH-1000XM4 reviewed by Adeline Watson", time: "14.07.2025" },
+      { text: "Sony WH-1000XM4 added to cart by Mussadiq", time: "09.07.2025" },
+      { text: "Sony WH-1000XM4 promoted in deals", time: "04.07.2025" }
     ]
   },
   {
-    "id": 6,
-    "img": "https://www.smartworld.it/wp-content/uploads/2019/09/High_Resolution_PNG-MX-Master-3-LEFT-GRAPHITE.png",
-    "title": "Logitech MX Master 3",
-    "color": "black",
-    "producer": "Logitech",
-    "price": "$59.49",
-    "createdAt": "01.02.2023",
-    "inStock": true,
-    "info": {
-      "color": "black",
-      "producer": "Logitech",
-      "inStock": true
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
+    id: 6,
+    img: "https://www.smartworld.it/wp-content/uploads/2019/09/High_Resolution_PNG-MX-Master-3-LEFT-GRAPHITE.png",
+    title: "Logitech MX Master 3",
+    color: "black",
+    producer: "Logitech",
+    price: "$1199.00",
+    createdAt: "01.02.2023",
+    inStock: true,
+    info: { color: "burgundy", producer: "Samsung", inStock: true },
+    chart: {
+      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      data: [
+        { name: "Jan", Visits: 1340 },
+        { name: "Feb", Visits: 1210 },
+        { name: "Mar", Visits: 1425 },
+        { name: "Apr", Visits: 1700 },
+        { name: "May", Visits: 1865 },
+        { name: "Jun", Visits: 1901 }
       ]
     },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+    activities: [
+      { text: "Samsung Galaxy S22 Ultra shared by Elva McDonald", time: "27.07.2025" },
+      { text: "Samsung Galaxy S22 Ultra featured in newsletter", time: "21.07.2025" },
+      { text: "Samsung Galaxy S22 Ultra bought by Brent Reeves", time: "15.07.2025" },
+      { text: "Samsung Galaxy S22 Ultra added to wishlist by Linnie Nelson", time: "10.07.2025" },
+      { text: "Samsung Galaxy S22 Ultra reviewed by Juan Harrington", time: "05.07.2025" }
     ]
   },
   {
-    "id": 7,
-    "img": "https://www.pngarts.com/files/7/Podcast-Mic-PNG-Picture.png",
-    "title": "Rode Podcast Microphone",
-    "color": "gray",
-    "producer": "Rode",
-    "price": "$119.49",
-    "createdAt": "01.02.2023",
-    "info": {
-      "color": "gray",
-      "producer": "Rode",
-      "inStock": false
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
-      ]
-    },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+  id: 7,
+  img: "https://www.pngarts.com/files/7/Podcast-Mic-PNG-Picture.png",
+    title: "Rode Podcast Microphone",
+    color: "gray",
+    producer: "Rode",
+  price: "$39.99",
+  createdAt: "01.02.2023",
+  inStock: true,
+  info: {
+    color: "red",
+    producer: "OneOdio",
+    inStock: true
+  },
+  chart: {
+    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    data: [
+      { name: "Jan", Visits: 880 },
+      { name: "Feb", Visits: 1295 },
+      { name: "Mar", Visits: 1420 },
+      { name: "Apr", Visits: 1015 },
+      { name: "May", Visits: 950 },
+      { name: "Jun", Visits: 1105 }
     ]
   },
-  {
-    "id": 8,
-    "img": "https://5.imimg.com/data5/SW/VM/MY-5774620/toshiba-split-ac-2-ton-3-star-rated-ras-24s3ks-500x500.png",
-    "title": "Toshiba Split AC 2",
-    "color": "white",
-    "producer": "Toshiba",
-    "price": "$899.99",
-    "createdAt": "01.02.2023",
-    "inStock": true,
-    "info": {
-      "color": "white",
-      "producer": "Toshiba",
-      "inStock": true
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
-      ]
-    },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+  activities: [
+    { text: "OneOdio A71 Wired Headphones added to wishlist by Angel Thomas", time: "28.07.2025" },
+    { text: "OneOdio A71 Wired Headphones bought by Linnie Nelson", time: "23.07.2025" },
+    { text: "OneOdio A71 Wired Headphones added to cart by Juan Harrington", time: "18.07.2025" },
+    { text: "OneOdio A71 Wired Headphones returned by Mussadiq", time: "13.07.2025" },
+    { text: "OneOdio A71 Wired Headphones promoted with 10% discount", time: "08.07.2025" }
+  ]
+},
+{
+  id: 8,
+  img: "https://5.imimg.com/data5/SW/VM/MY-5774620/toshiba-split-ac-2-ton-3-star-rated-ras-24s3ks-500x500.png",
+    title: "Toshiba Split AC 2",
+    color: "white",
+    producer: "Toshiba",
+  price: "$129.99",
+  createdAt: "01.02.2023",
+  inStock: false,
+  info: {
+    color: "gray",
+    producer: "Fitbit",
+    inStock: false
+  },
+  chart: {
+    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    data: [
+      { name: "Jan", Visits: 1035 },
+      { name: "Feb", Visits: 1175 },
+      { name: "Mar", Visits: 995 },
+      { name: "Apr", Visits: 1580 },
+      { name: "May", Visits: 1240 },
+      { name: "Jun", Visits: 1415 }
     ]
   },
-  {
-    "id": 9,
-    "img": "https://img.productz.com/review_image/102489/preview_sony-kdl-50w800b-50-inch-hdtv-review-superb-picture-102489.png",
-    "title": "Sony Bravia KDL-47W805A",
-    "color": "black",
-    "producer": "Sony",
-    "price": "$970.49",
-    "createdAt": "01.02.2023",
-    "info": {
-      "color": "black",
-      "producer": "Sony",
-      "inStock": false
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
-      ]
-    },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+  activities: [
+    { text: "Fitbit Versa 2 Health Watch reviewed by Elva McDonald", time: "28.07.2025" },
+    { text: "Fitbit Versa 2 Health Watch restocked alert sent to Brent Reeves", time: "23.07.2025" },
+    { text: "Fitbit Versa 2 Health Watch added to cart by Adeline Watson", time: "18.07.2025" },
+    { text: "Fitbit Versa 2 Health Watch marked out of stock", time: "13.07.2025" },
+    { text: "Fitbit Versa 2 Health Watch featured in daily deals", time: "08.07.2025" }
+  ]
+},
+{
+  id: 9,
+   img: "https://cdn.mos.cms.futurecdn.net/2de91ab36fe488f3ba997fb2c76516e6.jpg",
+    title: "Sony Bravia KDL-47W805A",
+    color: "black",
+    producer: "Sony",
+  price: "$849.99",
+  createdAt: "01.02.2023",
+  inStock: true,
+  info: {
+    color: "black",
+    producer: "Nikon",
+    inStock: true
+  },
+  chart: {
+    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    data: [
+      { name: "Jan", Visits: 1540 },
+      { name: "Feb", Visits: 1375 },
+      { name: "Mar", Visits: 1125 },
+      { name: "Apr", Visits: 1730 },
+      { name: "May", Visits: 1320 },
+      { name: "Jun", Visits: 1605 }
     ]
   },
-  {
-    "id": 10,
-    "img": "https://venturebeat.com/wp-content/uploads/2015/07/As_AO1-131_gray_nonglare_win10_03.png?fit=1338%2C1055&strip=all",
-    "title": "Acer Laptop 16 KL-4804",
-    "color": "black",
-    "producer": "Acer",
-    "price": "$599.99",
-    "createdAt": "01.02.2023",
-    "inStock": true,
-    "info": {
-      "color": "black",
-      "producer": "Acer",
-      "inStock": true
-    },
-    "chart": {
-      "dataKeys": [
-        {
-          "name": "Visits",
-          "color": "#8884d8"
-        }
-      ],
-      "data": [
-        {
-          "name": "Jan",
-          "Visits": 800
-        },
-        {
-          "name": "Feb",
-          "Visits": 967
-        },
-        {
-          "name": "Mar",
-          "Visits": 1098
-        },
-        {
-          "name": "Apr",
-          "Visits": 1200
-        },
-        {
-          "name": "May",
-          "Visits": 1108
-        },
-        {
-          "name": "Jun",
-          "Visits": 680
-        }
-      ]
-    },
-    "activities": [
-      {
-        "text": "Product restocked",
-        "time": "2 days ago"
-      },
-      {
-        "text": "Price updated",
-        "time": "1 week ago"
-      },
-      {
-        "text": "Color option added",
-        "time": "2 weeks ago"
-      },
-      {
-        "text": "User review posted",
-        "time": "1 month ago"
-      },
-      {
-        "text": "Product created",
-        "time": "01.02.2023"
-      }
+  activities: [
+    { text: "Nikon Z50 Mirrorless Camera added to wishlist by Adeline Watson", time: "28.07.2025" },
+    { text: "Nikon Z50 Mirrorless Camera reviewed by Angel Thomas", time: "23.07.2025" },
+    { text: "Nikon Z50 Mirrorless Camera bought by Mussadiq", time: "18.07.2025" },
+    { text: "Nikon Z50 Mirrorless Camera returned for exchange by Linnie Nelson", time: "13.07.2025" },
+    { text: "Nikon Z50 Mirrorless Camera listed in summer collection", time: "08.07.2025" }
+  ]
+},
+{
+  id: 10,
+ img: "https://venturebeat.com/wp-content/uploads/2015/07/As_AO1-131_gray_nonglare_win10_03.png?fit=1338%2C1055&strip=all",
+    title: "Acer Laptop 16 KL-4804",
+    color: "black",
+    producer: "Acer",
+  price: "$149.99",
+  createdAt: "01.02.2023",
+  inStock: false,
+  info: {
+    color: "black",
+    producer: "Nike",
+    inStock: false
+  },
+  chart: {
+    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    data: [
+      { name: "Jan", Visits: 890 },
+      { name: "Feb", Visits: 1040 },
+      { name: "Mar", Visits: 1195 },
+      { name: "Apr", Visits: 980 },
+      { name: "May", Visits: 1100 },
+      { name: "Jun", Visits: 1255 }
     ]
-  }
-]
+  },
+  activities: [
+    { text: "Nike Air Max 270 restocked notification sent to Elva McDonald", time: "28.07.2025" },
+    { text: "Nike Air Max 270 added to cart by Juan Harrington", time: "23.07.2025" },
+    { text: "Nike Air Max 270 featured in newsletter", time: "18.07.2025" },
+    { text: "Nike Air Max 270 reviewed by Brent Reeves", time: "13.07.2025" },
+    { text: "Nike Air Max 270 added to wishlist by Angel Thomas", time: "08.07.2025" }
+  ]
+}
+];
