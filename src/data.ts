@@ -7,13 +7,13 @@ export const menu = [
                 id: 1,
                 title: "Homepage",
                 url: "/",
-                icon: "home.svg"
+                icon: "/home.svg"
             },
             {
                 id: 2,
                 title: "Profile",
-                url: "/users/1",
-                icon: "user.svg"
+                url: "/profile",
+                icon: "/user.svg"
             },            
         ]
     },
@@ -25,25 +25,25 @@ export const menu = [
                 id: 1,
                 title: "Users",
                 url: "/users",
-                icon: "user.svg"
+                icon: "/user.svg"
             },
             {
                 id: 2,
                 title: "Products",
                 url: "/products",
-                icon: "product.svg"
+                icon: "/product.svg"
             },            
             {
                 id: 3,
                 title: "Orders",
                 url: "/orders",
-                icon: "order.svg"
+                icon: "/order.svg"
             },            
             {
                 id: 4,
                 title: "Posts",
                 url: "/posts",
-                icon: "post2.svg"
+                icon: "/post2.svg"
             },            
         ]
     },
@@ -55,25 +55,25 @@ export const menu = [
                 id: 1,
                 title: "ELements",
                 url: "/",
-                icon: "element.svg"
+                icon: "/element.svg"
             },
             {
                 id: 2,
                 title: "Notes",
                 url: "/",
-                icon: "note.svg"
+                icon: "/note.svg"
             },            
             {
                 id: 3,
                 title: "Forms",
                 url: "/",
-                icon: "form.svg"
+                icon: "/form.svg"
             },            
             {
                 id: 4,
                 title: "Calendar",
                 url: "/",
-                icon: "calendar.svg"
+                icon: "/calendar.svg"
             },            
         ]
     },
@@ -85,13 +85,13 @@ export const menu = [
                 id: 1,
                 title: "Settings",
                 url: "/",
-                icon: "setting.svg"
+                icon: "/setting.svg"
             },
             {
                 id: 2,
                 title: "Backups",
                 url: "/",
-                icon: "backup.svg"
+                icon: "/backup.svg"
             },                       
         ]
     },
@@ -103,16 +103,23 @@ export const menu = [
                 id: 1,
                 title: "Charts",
                 url: "/",
-                icon: "chart.svg"
+                icon: "/chart.svg"
             },
             {
                 id: 2,
                 title: "Logs",
                 url: "/",
-                icon: "log.svg"
+                icon: "/log.svg"
             },                        
         ]
     },
+]
+
+export const notifications = [
+  {img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load", msg: "Congratulate him", header: "Roman Joined the Team"},
+  {img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600", msg: "Salma sent you message", header: "New Message Received"},
+  {img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600", msg: "Check your message", header: "New Payment received"},
+  {img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600", msg: "Assign her new task", header: "Jolly completed task"},
 ]
 
 export const topDealUsers = [
@@ -558,7 +565,7 @@ export const singleUser = {
   title: "Mussadiq Khan",
   img: "/user.jpg",
   info: {
-    username: "mussadiq",
+    username: "mussadiq68",
     fullname: "Mussadiq Khan",
     email: "mussadiqkhan6886@gmail.com",
     phone: "123 456 789",

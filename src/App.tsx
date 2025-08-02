@@ -9,12 +9,17 @@ import Login from "./pages/login/Login"
 import User from "./pages/user/User"
 import Product from "./pages/product/Product"
 import "./styles/global.scss"
+import { Context } from "./context/Context"
+import { useContext } from "react"
+import Profile from "./pages/profile/Profile"
 
 function App() {
 
+  const {mode, setMode} = useContext(Context)
+
   const Layout = () => {
     return (
-      <div className="main">
+      <div className={`${mode == "dark" ? "main" : "main-light"}`}>
         <NavBar />
         <div className="container">
           <div className="menuContainer">
@@ -37,6 +42,10 @@ function App() {
         {
           path: "/",
           element: <Home />
+        },
+        {
+          path: "/profile",
+          element: <Profile />
         },
         {
           path: "/users",
