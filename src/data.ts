@@ -495,89 +495,6 @@ export const singleUser = {
     },
   ],
 };
-// export const singleProduct = {
-//   id: 1,
-//   title: "Playstation 5 Digital Edition",
-//   img: "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png",
-//   info: {
-//     productId: "Ps5SDF1156d",
-//     color: "white",
-//     price: "$250.99",
-//     producer: "Sony",
-//     export: "Japan",
-//   },
-//   chart: {
-//     dataKeys: [
-//       { name: "visits", color: "#82ca9d" },
-//       { name: "orders", color: "#8884d8" },
-//     ],
-//     data: [
-//       {
-//         name: "Sun",
-//         visits: 4000,
-//         orders: 2400,
-//       },
-//       {
-//         name: "Mon",
-//         visits: 3000,
-//         orders: 1398,
-//       },
-//       {
-//         name: "Tue",
-//         visits: 2000,
-//         orders: 3800,
-//       },
-//       {
-//         name: "Wed",
-//         visits: 2780,
-//         orders: 3908,
-//       },
-//       {
-//         name: "Thu",
-//         visits: 1890,
-//         orders: 4800,
-//       },
-//       {
-//         name: "Fri",
-//         visits: 2390,
-//         orders: 3800,
-//       },
-//       {
-//         name: "Sat",
-//         visits: 3490,
-//         orders: 4300,
-//       },
-//     ],
-//   },
-//   activities: [
-//     {
-//       text: "Mussadiq khan purchased Playstation 5 Digital Edition",
-//       time: "3 day ago",
-//     },
-//     {
-//       text: "Jane Doe added Playstation 5 Digital Edition into their wishlist",
-//       time: "1 week ago",
-//     },
-//     {
-//       text: "Mike Doe purchased Playstation 5 Digital Edition",
-//       time: "2 weeks ago",
-//     },
-//     {
-//       text: "Anna Doe reviewed the product",
-//       time: "1 month ago",
-//     },
-//     {
-//       text: "Michael Doe added Playstation 5 Digital Edition into their wishlist",
-//       time: "1 month ago",
-//     },
-//     {
-//       text: "Helen Doe reviewed the product",
-//       time: "2 months ago",
-//     },
-//   ],
-// };
-
-
 
 export const allUsers = [
   {
@@ -1922,14 +1839,17 @@ export const allProducts = [
     inStock: true,
     info: { color: "white", producer: "Sony", inStock: true },
     chart: {
-      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
       data: [
-        { name: "Jan", Visits: 1234 },
-        { name: "Feb", Visits: 980 },
-        { name: "Mar", Visits: 1602 },
-        { name: "Apr", Visits: 1344 },
-        { name: "May", Visits: 845 },
-        { name: "Jun", Visits: 1576 }
+        { name: "Jan", Visits: 1234, clicks: 1342  },
+        { name: "Feb", Visits: 980 , clicks: 1342 },
+        { name: "Mar", Visits: 1602, clicks: 342  },
+        { name: "Apr", Visits: 1344, clicks: 3420  },
+        { name: "May", Visits: 845 , clicks: 1342 },
+        { name: "Jun", Visits: 1576, clicks: 1342  }
       ]
     },
     activities: [
@@ -1951,14 +1871,17 @@ export const allProducts = [
     inStock: true,
     info: { color: "black", producer: "Dell", inStock: true },
     chart: {
-      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
       data: [
-        { name: "Jan", Visits: 890 },
-        { name: "Feb", Visits: 1123 },
-        { name: "Mar", Visits: 1589 },
-        { name: "Apr", Visits: 1784 },
-        { name: "May", Visits: 940 },
-        { name: "Jun", Visits: 1010 }
+        { name: "Jan", Visits: 890, clicks: 3342  },
+        { name: "Feb", Visits: 1123 , clicks: 342 },
+        { name: "Mar", Visits: 1589, clicks: 1342  },
+        { name: "Apr", Visits: 1784, clicks: 1420  },
+        { name: "May", Visits:  940 , clicks: 2332 },
+        { name: "Jun", Visits: 1010, clicks: 2000  }
       ]
     },
     activities: [
@@ -1980,14 +1903,17 @@ export const allProducts = [
     inStock: true,
     info: { color: "purple", producer: "Apple", inStock: true },
     chart: {
-      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
       data: [
-        { name: "Jan", Visits: 1540 },
-        { name: "Feb", Visits: 1470 },
-        { name: "Mar", Visits: 1320 },
-        { name: "Apr", Visits: 1755 },
-        { name: "May", Visits: 1611 },
-        { name: "Jun", Visits: 1902 }
+        { name: "Jan", Visits: 1540, clicks: 3342  },
+        { name: "Feb", Visits: 1470 , clicks: 342 },
+        { name: "Mar", Visits: 1320, clicks: 1342  },
+        { name: "Apr", Visits: 1755, clicks: 1420  },
+        { name: "May", Visits: 1611 , clicks: 1332 },
+        { name: "Jun", Visits: 1902, clicks: 1000  }
       ]
     },
     activities: [
@@ -2009,14 +1935,17 @@ export const allProducts = [
     inStock: true,
     info: { color: "gray", producer: "Apple", inStock: true },
     chart: {
-      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
       data: [
-        { name: "Jan", Visits: 990 },
-        { name: "Feb", Visits: 1230 },
-        { name: "Mar", Visits: 1495 },
-        { name: "Apr", Visits: 1105 },
-        { name: "May", Visits: 1670 },
-        { name: "Jun", Visits: 1430 }
+         { name: "Jan", Visits: 990, clicks: 1342  },
+        { name: "Feb", Visits: 1230 , clicks: 3342 },
+        { name: "Mar", Visits: 1495, clicks: 3421  },
+        { name: "Apr", Visits: 1105, clicks: 1020  },
+        { name: "May", Visits: 1670 , clicks: 2332 },
+        { name: "Jun", Visits: 1430, clicks: 500  }
       ]
     },
     activities: [
@@ -2038,14 +1967,17 @@ export const allProducts = [
     inStock: true,
     info: { color: "black", producer: "Sony", inStock: true },
     chart: {
-      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
       data: [
-        { name: "Jan", Visits: 870 },
-        { name: "Feb", Visits: 780 },
-        { name: "Mar", Visits: 920 },
-        { name: "Apr", Visits: 1150 },
-        { name: "May", Visits: 1345 },
-        { name: "Jun", Visits: 1299 }
+        { name: "Jan", Visits: 870, clicks: 3342  },
+        { name: "Feb", Visits: 780 , clicks: 342 },
+        { name: "Mar", Visits: 920, clicks: 1342  },
+        { name: "Apr", Visits: 1150, clicks: 1420  },
+        { name: "May", Visits: 1345 , clicks: 2332 },
+        { name: "Jun", Visits: 1299, clicks: 2000  }
       ]
     },
     activities: [
@@ -2067,14 +1999,17 @@ export const allProducts = [
     inStock: true,
     info: { color: "burgundy", producer: "Samsung", inStock: true },
     chart: {
-      dataKeys: [{ name: "Visits", color: "#8884d8" }],
+      dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
       data: [
-        { name: "Jan", Visits: 1340 },
-        { name: "Feb", Visits: 1210 },
-        { name: "Mar", Visits: 1425 },
-        { name: "Apr", Visits: 1700 },
-        { name: "May", Visits: 1865 },
-        { name: "Jun", Visits: 1901 }
+        { name: "Jan", Visits: 1340, clicks: 870 },
+        { name: "Feb", Visits: 1210, clicks: 780 },
+        { name: "Mar", Visits: 1425, clicks: 920 },
+        { name: "Apr", Visits: 1700, clicks:1150 },
+        { name: "May", Visits: 1865, clicks:1345 },
+        { name: "Jun", Visits: 1901, clicks:1299 }
       ]
     },
     activities: [
@@ -2100,7 +2035,10 @@ export const allProducts = [
     inStock: true
   },
   chart: {
-    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
     data: [
       { name: "Jan", Visits: 880 },
       { name: "Feb", Visits: 1295 },
@@ -2133,14 +2071,17 @@ export const allProducts = [
     inStock: false
   },
   chart: {
-    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
     data: [
-      { name: "Jan", Visits: 1035 },
-      { name: "Feb", Visits: 1175 },
-      { name: "Mar", Visits: 995 },
-      { name: "Apr", Visits: 1580 },
-      { name: "May", Visits: 1240 },
-      { name: "Jun", Visits: 1415 }
+      { name: "Jan", Visits: 1035, clicks: 1870 },
+      { name: "Feb", Visits: 1175, clicks: 1780 },
+      { name: "Mar", Visits: 995, clicks: 1920 },
+      { name: "Apr", Visits: 1580, clicks: 1150 },
+      { name: "May", Visits: 1240, clicks: 2345 },
+      { name: "Jun", Visits: 1415, clicks: 2299 }
     ]
   },
   activities: [
@@ -2166,14 +2107,17 @@ export const allProducts = [
     inStock: true
   },
   chart: {
-    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
     data: [
-      { name: "Jan", Visits: 1540 },
-      { name: "Feb", Visits: 1375 },
-      { name: "Mar", Visits: 1125 },
-      { name: "Apr", Visits: 1730 },
-      { name: "May", Visits: 1320 },
-      { name: "Jun", Visits: 1605 }
+      { name: "Jan", Visits: 1540, clicks: 870 },
+      { name: "Feb", Visits: 1375, clicks: 780 },
+      { name: "Mar", Visits: 1125, clicks: 920 },
+      { name: "Apr", Visits: 1730, clicks: 1150 },
+      { name: "May", Visits: 1320, clicks: 1345 },
+      { name: "Jun", Visits: 1605, clicks: 1299 }
     ]
   },
   activities: [
@@ -2199,14 +2143,17 @@ export const allProducts = [
     inStock: false
   },
   chart: {
-    dataKeys: [{ name: "Visits", color: "#8884d8" }],
+    dataKeys: [{ name: "Visits", color: "#8884d8" },{
+          name: "clicks",
+          color: "#8884d8"
+        }],
     data: [
-      { name: "Jan", Visits: 890 },
-      { name: "Feb", Visits: 1040 },
-      { name: "Mar", Visits: 1195 },
-      { name: "Apr", Visits: 980 },
-      { name: "May", Visits: 1100 },
-      { name: "Jun", Visits: 1255 }
+      { name: "Jan", Visits: 890, clicks:  870 },
+      { name: "Feb", Visits: 1040, clicks:  780 },
+      { name: "Mar", Visits: 1195, clicks:  920 },
+      { name: "Apr", Visits: 980, clicks:  1150 },
+      { name: "May", Visits: 1100, clicks:  1345 },
+      { name: "Jun", Visits: 1255, clicks: 1299 }
     ]
   },
   activities: [
