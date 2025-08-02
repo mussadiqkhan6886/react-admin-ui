@@ -2,7 +2,7 @@ import { useState } from "react"
 import Add from "../../components/add/Add"
 import DataTable from "../../components/dataTable/DataTable"
 import { GridColDef } from "@mui/x-data-grid";
-import { products } from "../../data";
+import { allProducts } from "../../data";
 import "./products.scss"
 
 const columns: GridColDef[] = [
@@ -63,7 +63,7 @@ const Products = () => {
         <h1>Product</h1>
         <button onClick={() => setOpen(true)}>Add New Products</button>
       </div>
-      <DataTable slug="products" columns={columns} rows={products} />
+      <DataTable slug="products" columns={columns} rows={allProducts} />
       {open && <Add slug="product" columns={columns} setOpen={setOpen} />}
     </div>
   )

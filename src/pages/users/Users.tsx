@@ -1,7 +1,7 @@
 import { GridColDef } from "@mui/x-data-grid";
 import DataTable from "../../components/dataTable/DataTable"
 import "./users.scss"
-import { userRows } from "../../data";
+import { allUsers } from "../../data";
 import { useState } from "react";
 import Add from "../../components/add/Add";
 
@@ -65,7 +65,7 @@ const Users = () => {
         <h1>Users</h1>
         <button onClick={() => setOpen(true)}>Add New Users</button>
       </div>
-      <DataTable slug="users" columns={columns} rows={userRows} />
+      <DataTable slug="users" columns={columns} rows={allUsers} />
       {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
     </div>
   )

@@ -1,11 +1,11 @@
 import Single from "../../components/single/Single"
 import "./user.scss"
-import { singleUser } from "../../data"
+import { allUsers } from "../../data"
 
 const User = () => {
   return (
     <div>
-      <Single {...singleUser} />
+      <Single data={allUsers} />
     </div>
   )
 }

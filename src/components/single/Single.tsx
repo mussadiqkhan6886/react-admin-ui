@@ -1,85 +1,118 @@
-import { Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 import "./single.scss";
-import { data } from "react-router-dom";
+import { useParams } from "react-router-dom";
+
+type InfoType = {
+  username: string;
+  fullname: string;
+  email: string;
+  phone: string;
+  status: string;
+};
+
+type ChartType = {
+  dataKeys: {
+    name: string;
+    color: string;
+  }[];
+  data: {
+    name: string;
+    [key: string]: number | string;
+  }[];
+};
+
+type ActivityType = {
+  text: string;
+  time: string;
+};
+
+type ItemType = {
+  id: number;
+  title: string;
+  img: string;
+  info: InfoType;
+  chart?: ChartType;
+  activities?: ActivityType[];
+};
 
 type Props = {
-  id:number
-  img?:string
-  title: string
-  info: object
-  chart: {
-    dataKeys: {name: string; color: string}[]
-    data: object[]
-  }
-  activities?: {time: string; text: string}[]
-}
+  data: ItemType[];
+};
 
-const Single = (props: Props) => {
+const Single = ({ data }: Props) => {
+  const { id } = useParams<{ id: string }>();
+  const itemId = Number(id);
+  const item = data.find((i) => i.id === itemId);
+
+  if (!item) return <div>Item not found</div>;
+
   return (
     <div className="single">
       <div className="view">
         <div className="info">
           <div className="topInfo">
-            <img src={props.img} alt="img user" />
-            <h1>{props.title}</h1>
+            <img src={item.img} alt="item image" />
+            <h1>{item.title}</h1>
           </div>
           <div className="details">
-            {Object.entries(props.info).map((item) => (
-              <div key={item[0]} className="item">
-              <span className="itemTitle">{item[0]}: </span>
-              <span className="itemValue">{item[1]}</span>
-            </div>
+            {Object.entries(item.info).map(([key, value]) => (
+              <div key={key} className="item">
+                <span className="itemTitle">{key}:</span>
+                <span className="itemValue">{value}</span>
+              </div>
             ))}
           </div>
         </div>
         <hr />
-        {props.chart && (
-        <div className="chart">
-          <ResponsiveContainer width={"99%"} height={"100%"}>
-            <LineChart 
-              width={500}
-              height={300}
-              data={props.chart.data}
-              margin={{
-                top: 5,
-                right: 30,
-                left: 20,
-                bottom: 5
-              }}
+        {item.chart && (
+          <div className="chart">
+            <ResponsiveContainer width="99%" height="100%">
+              <LineChart
+                data={item.chart.data}
+                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
               >
-                <XAxis dataKey={"name"} />
+                <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                {props.chart.dataKeys.map(dataKey => (
-                  <Line 
-                  key={data.name}
-                  type={"monotone"}
-                  dataKey={dataKey.name}
-                  stroke={dataKey.color}
-    
-                />
+                {item.chart.dataKeys.map((dataKey) => (
+                  <Line
+                    key={dataKey.name}
+                    type="monotone"
+                    dataKey={dataKey.name}
+                    stroke={dataKey.color}
+                  />
                 ))}
               </LineChart>
-          </ResponsiveContainer>
-        </div>
+            </ResponsiveContainer>
+          </div>
         )}
       </div>
       <div className="activities">
         <h2>Latest Activities</h2>
-        {props.activities && (<ul>
-          {props.activities.map(activity => (
-            <li key={activity.text}>
-              <div>
-                <p>{activity.text}</p>
-                <time>{activity.time}</time>
-              </div>
-          </li>
-          )) }
-        </ul>)}
+        {item.activities && (
+          <ul>
+            {item.activities.map((activity) => (
+              <li key={activity.text}>
+                <div>
+                  <p>{activity.text}</p>
+                  <time>{activity.time}</time>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Single
+export default Single;
