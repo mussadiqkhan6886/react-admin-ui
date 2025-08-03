@@ -1837,7 +1837,7 @@ export const allProducts = [
     price: "$250.99",
     createdAt: "01.02.2023",
     inStock: "yes",
-    info: { color: "white", producer: "Sony", inStock: "yes" },
+    info: { color: "white", producer: "Sony", inStock: "yes", price: "$250.99", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1869,7 +1869,7 @@ export const allProducts = [
     price: "$499.99",
     createdAt: "01.02.2023",
     inStock: "Yes",
-    info: { color: "black", producer: "Dell", inStock: "Yes" },
+    info: { color: "black", producer: "Dell", inStock: "Yes", price: "$499.99", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1901,7 +1901,7 @@ export const allProducts = [
     price: "$999.00",
     createdAt: "01.02.2023",
     inStock: "Yes",
-    info: { color: "purple", producer: "Apple", inStock: "Yes" },
+    info: { color: "purple", producer: "Apple", inStock: "Yes", price: "$999.00" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1933,7 +1933,7 @@ export const allProducts = [
     price: "$1599.00",
     createdAt: "01.02.2023",
     inStock: "Yes",
-    info: { color: "gray", producer: "Apple", inStock: "Yes" },
+    info: { color: "gray", producer: "Apple", inStock: "Yes", price: "$1599.00", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1965,7 +1965,7 @@ export const allProducts = [
     price: "$299.99",
     createdAt: "01.02.2023",
     inStock: "yes",
-    info: { color: "black", producer: "Sony", inStock: "yes" },
+    info: { color: "black", producer: "Sony", inStock: "yes", price: "$299.99", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1997,7 +1997,7 @@ export const allProducts = [
     price: "$1199.00",
     createdAt: "01.02.2023",
     inStock: "Yes",
-    info: { color: "burgundy", producer: "Samsung", inStock: "Yes" },
+    info: { color: "burgundy", producer: "Samsung", inStock: "Yes",  price: "$1199.00", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -2032,7 +2032,8 @@ export const allProducts = [
   info: {
     color: "red",
     producer: "OneOdio",
-    inStock: "Yes"
+    inStock: "Yes",
+     price: "$39.99",
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2068,7 +2069,8 @@ export const allProducts = [
   info: {
     color: "gray",
     producer: "Fitbit",
-    inStock: "No"
+    inStock: "No",
+    price: "$129.99",
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2104,7 +2106,8 @@ export const allProducts = [
   info: {
     color: "black",
     producer: "Nikon",
-    inStock: "Yes"
+    inStock: "Yes",
+    price: "$849.99",
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2140,7 +2143,8 @@ export const allProducts = [
   info: {
     color: "black",
     producer: "Nike",
-    inStock: "No"
+    inStock: "No",
+     price: "$149.99",
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
