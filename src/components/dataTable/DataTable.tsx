@@ -1,5 +1,6 @@
 import "./dataTable.scss"
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 type Props = {
@@ -10,8 +11,10 @@ type Props = {
 
 const DataTable = (props: Props) => {
 
+  const [data, setData] = useState(props.rows)
+
     const handleDelete = (id: number) => {
-        console.log(id + "has been deleted")
+        setData(data.filter((item : any) => item.id !== id))
     }
 
     const actionColumn: GridColDef = {
@@ -34,7 +37,7 @@ const DataTable = (props: Props) => {
     <div className="dataTable">
       <DataGrid
         className="dataGrid"
-        rows={props.rows}
+        rows={data}
         columns={[...props.columns, actionColumn]}
         initialState={{
           pagination: {

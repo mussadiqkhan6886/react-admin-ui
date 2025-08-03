@@ -1,16 +1,22 @@
+@import "../../styles/variables.scss";
+
 .dataTable{
     width: 95%;
 
     .dataGrid{
-        background-color: rgb(255 255 255);
+        background:whitesmoke;
         padding: 20px;
     }
+
+   
 
     .MuiDataGrid-toolbar{
         flex-direction: row-reverse;
         justify-content: space-between;
 
     }
+
+
     
     img{
         width: 32px;

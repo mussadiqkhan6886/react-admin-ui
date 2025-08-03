@@ -1836,8 +1836,8 @@ export const allProducts = [
     producer: "Sony",
     price: "$250.99",
     createdAt: "01.02.2023",
-    inStock: true,
-    info: { color: "white", producer: "Sony", inStock: true },
+    inStock: "yes",
+    info: { color: "white", producer: "Sony", inStock: "yes" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1868,8 +1868,8 @@ export const allProducts = [
     producer: "Dell",
     price: "$499.99",
     createdAt: "01.02.2023",
-    inStock: true,
-    info: { color: "black", producer: "Dell", inStock: true },
+    inStock: "Yes",
+    info: { color: "black", producer: "Dell", inStock: "Yes" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1900,8 +1900,8 @@ export const allProducts = [
     producer: "Samsung",
     price: "$999.00",
     createdAt: "01.02.2023",
-    inStock: true,
-    info: { color: "purple", producer: "Apple", inStock: true },
+    inStock: "Yes",
+    info: { color: "purple", producer: "Apple", inStock: "Yes" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1932,8 +1932,8 @@ export const allProducts = [
     producer: "Philips",
     price: "$1599.00",
     createdAt: "01.02.2023",
-    inStock: true,
-    info: { color: "gray", producer: "Apple", inStock: true },
+    inStock: "Yes",
+    info: { color: "gray", producer: "Apple", inStock: "Yes" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1964,8 +1964,8 @@ export const allProducts = [
     producer: "Apple",
     price: "$299.99",
     createdAt: "01.02.2023",
-    inStock: true,
-    info: { color: "black", producer: "Sony", inStock: true },
+    inStock: "yes",
+    info: { color: "black", producer: "Sony", inStock: "yes" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1996,8 +1996,8 @@ export const allProducts = [
     producer: "Logitech",
     price: "$1199.00",
     createdAt: "01.02.2023",
-    inStock: true,
-    info: { color: "burgundy", producer: "Samsung", inStock: true },
+    inStock: "Yes",
+    info: { color: "burgundy", producer: "Samsung", inStock: "Yes" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -2028,11 +2028,11 @@ export const allProducts = [
     producer: "Rode",
   price: "$39.99",
   createdAt: "01.02.2023",
-  inStock: true,
+  inStock: "Yes",
   info: {
     color: "red",
     producer: "OneOdio",
-    inStock: true
+    inStock: "Yes"
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2064,11 +2064,11 @@ export const allProducts = [
     producer: "Toshiba",
   price: "$129.99",
   createdAt: "01.02.2023",
-  inStock: false,
+  inStock: "No",
   info: {
     color: "gray",
     producer: "Fitbit",
-    inStock: false
+    inStock: "No"
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2100,11 +2100,11 @@ export const allProducts = [
     producer: "Sony",
   price: "$849.99",
   createdAt: "01.02.2023",
-  inStock: true,
+  inStock: "Yes",
   info: {
     color: "black",
     producer: "Nikon",
-    inStock: true
+    inStock: "Yes"
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2136,11 +2136,11 @@ export const allProducts = [
     producer: "Acer",
   price: "$149.99",
   createdAt: "01.02.2023",
-  inStock: false,
+  inStock: "No",
   info: {
     color: "black",
     producer: "Nike",
-    inStock: false
+    inStock: "No"
   },
   chart: {
     dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2165,3 +2165,42 @@ export const allProducts = [
   ]
 }
 ];
+
+export const RadarData = [
+  {
+    "product": "Playstation",
+    "A": 120,
+    "B": 110,
+    "fullMark": 150
+  },
+  {
+    "product": "Iphone",
+    "A": 98,
+    "B": 130,
+    "fullMark": 150
+  },
+  {
+    "product": "TV 4k",
+    "A": 86,
+    "B": 130,
+    "fullMark": 150
+  },
+  {
+    "product": "Speakers",
+    "A": 99,
+    "B": 100,
+    "fullMark": 150
+  },
+  {
+    "product": "PC",
+    "A": 85,
+    "B": 90,
+    "fullMark": 150
+  },
+  {
+    "product": "XBOX",
+    "A": 65,
+    "B": 85,
+    "fullMark": 150
+  }
+]

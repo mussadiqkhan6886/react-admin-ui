@@ -11,6 +11,7 @@ type Props = {
 const Add = (props: Props) => {
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+      props.setOpen(false)
         e.preventDefault()
     }
 

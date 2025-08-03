@@ -9,17 +9,13 @@ import Login from "./pages/login/Login"
 import User from "./pages/user/User"
 import Product from "./pages/product/Product"
 import "./styles/global.scss"
-import { Context } from "./context/Context"
-import { useContext } from "react"
 import Profile from "./pages/profile/Profile"
 
 function App() {
 
-  const {mode, setMode} = useContext(Context)
-
   const Layout = () => {
     return (
-      <div className={`${mode == "dark" ? "main" : "main-light"}`}>
+      <div className="main">
         <NavBar />
         <div className="container">
           <div className="menuContainer">

@@ -1,11 +1,9 @@
 import "./navbar.scss"
-import SetMode from "../setMode/SetMode"
 import { useState } from "react"
 import { notifications } from "../../data"
 import { Link } from "react-router-dom"
 
 const NavBar = () => {
-  const [open, setOpen] = useState(false)
   const [notification, setNotification] = useState(false)
   const [profile, setProfile] = useState(false)
   return (
@@ -80,9 +78,8 @@ const NavBar = () => {
             </div>
           </div>)}
         </div>
-        <img onClick={() => setOpen(true)} src="/settings.svg" alt="setting" className="icon" />
+        <img src="/settings.svg" alt="setting" className="icon" />
       </div>
-      {open && <SetMode setOpen={setOpen} />}
     </div>
   )
 }

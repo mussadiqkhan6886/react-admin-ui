@@ -5,6 +5,7 @@ import {barChartBoxRevenue, barChartBoxVisit, chartBoxConversion, chartBoxProduc
 import BarChartBox from "../../components/barChartBox/BarChartBox"
 import PieChartBox from "../../components/pieChartBox/PieChartBox"
 import BigChartBox from "../../components/bigChartBox/BigChartBox"
+import ChartRadar from "../../components/radarChart/ChartRadar"
 
 const Home = () => {
   return (
@@ -35,6 +36,9 @@ const Home = () => {
      </div>
      <div className="box box9">
       <BarChartBox {...barChartBoxRevenue} />
+     </div>
+     <div className="box box10">
+      <ChartRadar />
      </div>
     </div>
   )

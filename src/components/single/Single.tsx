@@ -38,6 +38,7 @@ type ItemType = {
   id: number;
   title: string;
   img: string;
+  price?: number;
   info: InfoType;
   chart?: ChartType;
   activities?: ActivityType[];
@@ -63,10 +64,10 @@ const Single = ({ data }: Props) => {
             <h1>{item.title}</h1>
           </div>
           <div className="details">
-            {Object.entries(item.info).map(([key, value]) => (
-              <div key={key} className="item">
-                <span className="itemTitle">{key}:</span>
-                <span className="itemValue">{value}</span>
+            {Object.entries(item.info).map((itemValue) => (
+              <div className="item" key={itemValue[0]}>
+                <span className="itemTitle">{itemValue[0]}:</span>
+                <span className="itemValue">{itemValue[1]}</span>
               </div>
             ))}
           </div>
