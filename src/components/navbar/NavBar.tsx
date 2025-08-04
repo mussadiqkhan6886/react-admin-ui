@@ -1,15 +1,17 @@
 import "./navbar.scss"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { notifications } from "../../data"
 import { Link } from "react-router-dom"
+import { MenuContext } from "../../Context/MenuContext"
 
 const NavBar = () => {
   const [notification, setNotification] = useState(false)
   const [profile, setProfile] = useState(false)
+  const {menuBar, setMenuBar} = useContext(MenuContext)
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="/logo.svg" alt="logo" />
+        <img onClick={() => setMenuBar(!menuBar)} src="/logo.svg" alt="logo" />
         <span>MkAdmin</span>
       </div>
       <div className="icons">
@@ -58,23 +60,28 @@ const NavBar = () => {
                 </div>
                 <div className="buttons">
                    <Link to={"/profile"} onClick={() => setProfile(false)}>
-                   <button>
-                    <img src="./user.svg" alt="user logo" />
-                    <h6>My Profile</h6>
-                   </button></Link>
+                    <button>
+                      <img src="./user.svg" alt="user logo" />
+                      <h6>My Profile</h6>
+                    </button>
+                   </Link>
                    <button>
                     <img src="./post2.svg" alt="user logo" />
                     <h6>My Inbox</h6>
                    </button>
-                   <button>
-                    <img src="./order.svg" alt="user logo" />
-                    <h6>My Tasks</h6>
-                   </button>
+                   <Link to={"/kanban"} onClick={() => setProfile(false)}>
+                    <button>
+                      <img src="./order.svg" alt="user logo" />
+                      <h6>My Tasks</h6>
+                    </button>
+                   </Link>
                 </div>
               </div>
-              <button>
-                <Link to={"/login"}>Log Out</Link>
-              </button>
+              <Link to={"/login"}>
+                <button>
+                  Log Out
+                </button>
+              </Link>
             </div>
           </div>)}
         </div>

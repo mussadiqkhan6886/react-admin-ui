@@ -10,6 +10,11 @@ import User from "./pages/user/User"
 import Product from "./pages/product/Product"
 import "./styles/global.scss"
 import Profile from "./pages/profile/Profile"
+import ContactUs from "./pages/contact/Contact"
+import Order from "./pages/orders/Order"
+import Missing from "./pages/missing/Missing"
+import KanBan from "./pages/kanban/KanBan"
+import Calendar from "./pages/Calendar/Calendar"
 
 function App() {
 
@@ -59,6 +64,26 @@ function App() {
           path: "/products/:id",
           element: <Product />
         },
+        {
+          path: "/contact",
+          element: <ContactUs />
+        },
+        {
+          path: "/order",
+          element: <Order />
+        },
+        {
+          path: "/kanban",
+          element: <KanBan />
+        },
+        {
+          path: "/calendar",
+          element: <Calendar />
+        },
+        {
+          path: "*",
+          element: <Missing />
+        }
       ],
     },
     {

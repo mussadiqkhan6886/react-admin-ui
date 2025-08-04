@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import "./menu.scss"
 import {menu} from "../../data"
+import { useContext } from "react"
+import { MenuContext } from "../../Context/MenuContext"
 
 const Menu = () => {
 
@@ -16,8 +18,10 @@ const Menu = () => {
     title: string,
     listItems: ListItem[]
   }
+
+  const {menuBar} = useContext(MenuContext)
   return (
-    <div className="menu">
+    menuBar && (<div className="menu">
       {menu.map((item: Item) => (
       <div key={item.id} className="item">
         <span className="title">{item.title.toUpperCase()}</span>
@@ -29,7 +33,7 @@ const Menu = () => {
         ))}
       </div>
       ))}
-    </div>
+    </div>)
   )
 }
 

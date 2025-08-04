@@ -23,7 +23,7 @@ const Profile = () => {
           </div>
           <div className="details">
             {Object.entries(item.info).map(([key, value]) => (
-              <div key={key} className="item">
+              <div key={value} className="item">
                 <span className="itemTitle">{key}:</span>
                 <span className="itemValue">{value}</span>
               </div>
@@ -59,8 +59,8 @@ const Profile = () => {
         <h2>Latest Activities</h2>
         {item.activities && (
           <ul>
-            {item.activities.map((activity) => (
-              <li key={activity.text}>
+            {item.activities.map((activity, index) => (
+              <li key={index}>
                 <div>
                   <p>{activity.text}</p>
                   <time>{activity.time}</time>

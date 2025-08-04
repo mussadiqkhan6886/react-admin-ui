@@ -34,7 +34,11 @@
                 font-size: 18px;
 
                 .item{
-                    margin: 30px 0;
+                    margin: 30px 0px;
+
+                    @include sm{
+                        font-size: 14px;
+                    }
 
                     .itemTitle{
                         font-weight: 600;

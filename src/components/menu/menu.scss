@@ -2,6 +2,12 @@
 @import "../../styles/responsive.scss";
 
 .menu{
+
+    @media screen and (max-width:400px){
+        position: absolute;
+        background: $dark-bg;
+        z-index: 10000000000;
+    }
     .item{
         display: flex;
         flex-direction: column;

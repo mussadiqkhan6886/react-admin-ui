@@ -36,8 +36,8 @@ export const menu = [
             {
                 id: 3,
                 title: "Orders",
-                url: "/orders",
-                icon: "/order.svg"
+                url: "/order",
+                icon: "/element.svg"
             },            
             {
                 id: 4,
@@ -49,68 +49,44 @@ export const menu = [
     },
     {
         id: 3,
+        title: "Apps",
+        listItems: [
+            {
+                id: 1,
+                title: "Calendar",
+                url: "/calendar",
+                icon: "/calendar.svg"
+            },
+            {
+                id: 2,
+                title: "Kanban",
+                url: "/kanban",
+                icon: "/backup.svg"
+            },                       
+        ]
+    },
+    {
+        id: 4,
         title: "General",
         listItems: [
             {
                 id: 1,
-                title: "ELements",
-                url: "/",
-                icon: "/element.svg"
+                title: "Contact",
+                url: "/contact",
+                icon: "/note.svg"
             },
             {
                 id: 2,
-                title: "Notes",
-                url: "/",
-                icon: "/note.svg"
+                title: "About Us",
+                url: "/about",
+                icon: "/order.svg"
             },            
             {
                 id: 3,
                 title: "Forms",
                 url: "/",
                 icon: "/form.svg"
-            },            
-            {
-                id: 4,
-                title: "Calendar",
-                url: "/",
-                icon: "/calendar.svg"
-            },            
-        ]
-    },
-    {
-        id: 4,
-        title: "Maintenance",
-        listItems: [
-            {
-                id: 1,
-                title: "Settings",
-                url: "/",
-                icon: "/setting.svg"
-            },
-            {
-                id: 2,
-                title: "Backups",
-                url: "/",
-                icon: "/backup.svg"
-            },                       
-        ]
-    },
-    {
-        id: 5,
-        title: "analytics",
-        listItems: [
-            {
-                id: 1,
-                title: "Charts",
-                url: "/",
-                icon: "/chart.svg"
-            },
-            {
-                id: 2,
-                title: "Logs",
-                url: "/",
-                icon: "/log.svg"
-            },                        
+            },                   
         ]
     },
 ]
@@ -1836,8 +1812,8 @@ export const allProducts = [
     producer: "Sony",
     price: "$250.99",
     createdAt: "01.02.2023",
-    inStock: "yes",
-    info: { color: "white", producer: "Sony", inStock: "yes", price: "$250.99", },
+    inStock: false,
+    info: { color: "white", producer: "Sony", inStock: "no", price: "$250.99", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
           name: "clicks",
@@ -1868,7 +1844,7 @@ export const allProducts = [
     producer: "Dell",
     price: "$499.99",
     createdAt: "01.02.2023",
-    inStock: "Yes",
+    inStock: true,
     info: { color: "black", producer: "Dell", inStock: "Yes", price: "$499.99", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -1900,7 +1876,7 @@ export const allProducts = [
     producer: "Samsung",
     price: "$999.00",
     createdAt: "01.02.2023",
-    inStock: "Yes",
+    inStock: true,
     info: { color: "purple", producer: "Apple", inStock: "Yes", price: "$999.00" },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -1932,7 +1908,7 @@ export const allProducts = [
     producer: "Philips",
     price: "$1599.00",
     createdAt: "01.02.2023",
-    inStock: "Yes",
+    inStock: true,
     info: { color: "gray", producer: "Apple", inStock: "Yes", price: "$1599.00", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -1964,7 +1940,7 @@ export const allProducts = [
     producer: "Apple",
     price: "$299.99",
     createdAt: "01.02.2023",
-    inStock: "yes",
+    inStock: true,
     info: { color: "black", producer: "Sony", inStock: "yes", price: "$299.99", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -1996,7 +1972,7 @@ export const allProducts = [
     producer: "Logitech",
     price: "$1199.00",
     createdAt: "01.02.2023",
-    inStock: "Yes",
+    inStock: true,
     info: { color: "burgundy", producer: "Samsung", inStock: "Yes",  price: "$1199.00", },
     chart: {
       dataKeys: [{ name: "Visits", color: "#8884d8" },{
@@ -2028,11 +2004,11 @@ export const allProducts = [
     producer: "Rode",
   price: "$39.99",
   createdAt: "01.02.2023",
-  inStock: "Yes",
+  inStock: false,
   info: {
     color: "red",
     producer: "OneOdio",
-    inStock: "Yes",
+    inStock: "No",
      price: "$39.99",
   },
   chart: {
@@ -2065,7 +2041,7 @@ export const allProducts = [
     producer: "Toshiba",
   price: "$129.99",
   createdAt: "01.02.2023",
-  inStock: "No",
+  inStock: false,
   info: {
     color: "gray",
     producer: "Fitbit",
@@ -2102,7 +2078,7 @@ export const allProducts = [
     producer: "Sony",
   price: "$849.99",
   createdAt: "01.02.2023",
-  inStock: "Yes",
+  inStock: true,
   info: {
     color: "black",
     producer: "Nikon",
@@ -2139,7 +2115,7 @@ export const allProducts = [
     producer: "Acer",
   price: "$149.99",
   createdAt: "01.02.2023",
-  inStock: "No",
+  inStock: false,
   info: {
     color: "black",
     producer: "Nike",
@@ -2208,3 +2184,107 @@ export const RadarData = [
     "fullMark": 150
   }
 ]
+
+export const orders = [
+  {
+    id: 1,
+    title: "Sony Bravia KDL-47W805A",
+    img: "https://cdn.mos.cms.futurecdn.net/2de91ab36fe488f3ba997fb2c76516e6.jpg",
+    customerName: "Mariam Yousaf",
+    status: "Delivered",
+    location: "Pakistan",
+    price: "$999.00",
+    orderId: "10009"
+  },
+  {
+    id: 2,
+    title: "Playstation 5 Digital Edition",
+    img: "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png",
+    customerName: "Mussadiq Khan",
+    status: "Delivered",
+    location: "USA",
+    price: "$499.99",
+    orderId: "10001"
+  },
+  {
+    id: 3,
+    title: "Apple Iphone 14 Pro Max",
+    img: "https://raylo.imgix.net/iphone-14-blue.png",
+    customerName: "Sara Khan",
+    status: "Onway",
+    location: "USA",
+    price: "$1099.00",
+    orderId: "10005"
+  },
+  {
+    id: 4,
+    title: "Rode Podcast Microphone",
+    img: "https://www.pngarts.com/files/7/Podcast-Mic-PNG-Picture.png",
+    customerName: "Fariha Noor",
+    status: "Cancelled",
+    location: "UAE",
+    price: "$220.00",
+    orderId: "10007"
+  },
+  {
+    id: 5,
+    title: "Dell Laptop KR211822",
+    img: "https://www.pngmart.com/files/6/Dell-Laptop-PNG-Image.png",
+    customerName: "Ali Raza",
+    status: "Onway",
+    location: "UK",
+    price: "$899.00",
+    orderId: "10002"
+  },
+  {
+    id: 6,
+    title: "Acer Laptop 16 KL-4804",
+    img: "https://venturebeat.com/wp-content/uploads/2015/07/As_AO1-131_gray_nonglare_win10_03.png?fit=1338%2C1055&strip=all",
+    customerName: "Talha Anwar",
+    status: "Cancelled",
+    location: "France",
+    price: "$649.00",
+    orderId: "10010"
+  },
+  {
+    id: 7,
+    title: "Philips Hue Play Gradient",
+    img: "https://www.signify.com/b-dam/signify/en-aa/about/news/2020/20200903-movie-night-essentials-popcorn-ice-cream-and-the-new-philips-hue-play-gradient-lightstrip/packaging-lighstrip.png",
+    customerName: "Ahmed Bilal",
+    status: "Delivered",
+    location: "Germany",
+    price: "$199.99",
+    orderId: "10004"
+  },
+  {
+    id: 8,
+    title: "Samsung TV 4K SmartTV",
+    img: "http://images.samsung.com/is/image/samsung/uk-led-tv-hg40ed670ck-hg40ed670ckxxu-001-front",
+    customerName: "Areeba Sheikh",
+    status: "Cancelled",
+    location: "Canada",
+    price: "$1299.00",
+    orderId: "10003"
+  },
+  {
+    id: 9,
+    title: "Logitech MX Master 3",
+    img: "https://www.smartworld.it/wp-content/uploads/2019/09/High_Resolution_PNG-MX-Master-3-LEFT-GRAPHITE.png",
+    customerName: "Zain Ul Abideen",
+    status: "Delivered",
+    location: "Australia",
+    price: "$129.99",
+    orderId: "10006"
+  },
+  {
+    id: 10,
+    title: "Toshiba Split AC 2",
+    img: "https://5.imimg.com/data5/SW/VM/MY-5774620/toshiba-split-ac-2-ton-3-star-rated-ras-24s3ks-500x500.png",
+    customerName: "Imran Ashraf",
+    status: "Onway",
+    location: "India",
+    price: "$799.00",
+    orderId: "10008"
+  }
+];
+
