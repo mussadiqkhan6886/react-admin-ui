@@ -6,8 +6,7 @@ import BarChartBox from "../../components/barChartBox/BarChartBox"
 import PieChartBox from "../../components/pieChartBox/PieChartBox"
 import BigChartBox from "../../components/bigChartBox/BigChartBox"
 import ChartRadar from "../../components/radarChart/ChartRadar"
-import { useContext } from "react"
-import { MenuContext } from "../../Context/MenuContext"
+import { useMenuContext } from "../../hooks/MenuContext"
 
 
 const Home = () => {
@@ -17,38 +16,38 @@ const Home = () => {
   }
 
   
-  const {mode} = useContext(MenuContext)
+  const {mode} = useMenuContext()
   const navbarStyle = mode === "dark" ? {} : light;
   return (
     <div style={navbarStyle} className='home'>
-     <div className={`${mode === "light" ? "light" : "box"}  box1`}>
+     <div data-aos="fade-left" className={`${mode === "light" ? "light" : "box"}  box1`}>
         <TopBox />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box2`}>
+     <div data-aos="fade-left" className={`${mode === "light" ? "light" : "box"} box2`}>
       <ChartBox {...chartBoxUser} />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box3`}>
+     <div data-aos="fade-up" className={`${mode === "light" ? "light" : "box"} box3`}>
       <ChartBox {...chartBoxProduct} />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box4`}>
+     <div data-aos="fade-right" className={`${mode === "light" ? "light" : "box"} box4`}>
       <PieChartBox />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box5`}>
+     <div data-aos="fade-up-right" className={`${mode === "light" ? "light" : "box"} box5`}>
       <ChartBox {...chartBoxConversion} />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box6`}>
+     <div data-aos="fade-up-left" className={`${mode === "light" ? "light" : "box"} box6`}>
       <ChartBox {...chartBoxRevenue} />
       </div>
-     <div className={`${mode === "light" ? "light" : "box"} box7`}>
+     <div data-aos="fade-down-right" className={`${mode === "light" ? "light" : "box"} box7`}>
       <BigChartBox />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box8`}>
+     <div data-aos="fade-down" className={`${mode === "light" ? "light" : "box"} box8`}>
       <BarChartBox {...barChartBoxVisit} />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box9`}>
+     <div data-aos="fade-right" className={`${mode === "light" ? "light" : "box"} box9`}>
       <BarChartBox {...barChartBoxRevenue} />
      </div>
-     <div className={`${mode === "light" ? "light" : "box"} box10`}>
+     <div data-aos="fade-right" className={`${mode === "light" ? "light" : "box"} box10`}>
       <ChartRadar />
      </div>
     </div>

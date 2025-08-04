@@ -25,7 +25,7 @@ const Profile = () => {
 
   return (
     <div style={navbarStyle} className="single">
-      <div className="view">
+      <div data-aos="fade-up-right" className="view">
         <div className="info">
           <div className="topInfo">
             <img src={item.img} alt="item image" />
@@ -65,7 +65,7 @@ const Profile = () => {
           </div>
         )}
       </div>
-      <div className="activities">
+      <div data-aos="fade-up-left" className="activities">
         <h2>Latest Activities</h2>
         {item.activities && (
           <ul>

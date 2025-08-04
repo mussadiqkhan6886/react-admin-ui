@@ -32,7 +32,7 @@ const Menu = () => {
       <div key={item.id} className="item">
         <span style={mode == "light" ? {color: "black"} : {}}  className="title">{item.title.toUpperCase()}</span>
         {item.listItems.map((listItem: ListItem) => (
-          <Link to={`${listItem.url}`} key={listItem.id} className={`${mode === "light" ? "light" : "listItem"} mutual`}>
+          <Link data-aos="fade-up-right" data-aos-delay={100 * listItem.id} to={`${listItem.url}`} key={listItem.id} className={`${mode === "light" ? "light" : "listItem"} mutual`}>
             <i className={`fa-solid fa-${listItem.icon}`}></i>
             <span className="listItemTitle">{listItem.title}</span>
           </Link>

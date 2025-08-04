@@ -100,7 +100,7 @@ const NavBar = () => {
         <i style={{cursor: "pointer"}} className="fa-solid fa-gear" onClick={() => setSetting(true)}></i>
       </div>
       {setting && (
-        <div style={mode == "dark" ? {color: "white", background: "navy"} : {}} className="settingMenu">
+        <div data-aos="fade-left" style={mode == "dark" ? {color: "white", background: "navy"} : {}} className="settingMenu">
           <h1>Choose Mode</h1>
           <p onClick={() => setSetting(false)}>x</p>
           <div className="modeSetting">

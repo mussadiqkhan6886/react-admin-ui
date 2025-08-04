@@ -18,8 +18,20 @@ import Calendar from "./pages/Calendar/Calendar"
 import About from "./pages/about/About"
 import FAQ from "./pages/faq/FAQ"
 import { useMenuContext } from "./hooks/MenuContext"
+import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function App() {
+
+  useEffect(() => {
+      AOS.init({
+        offset: 100,
+        duration: 700,
+        easing: "ease-in",
+        delay: 100
+      })
+    })
 
    const {mode} = useMenuContext()
   
