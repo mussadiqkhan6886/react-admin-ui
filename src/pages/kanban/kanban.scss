@@ -1,0 +1,19 @@
+.App{
+
+    #kanban{
+
+        background-color: rgb(209 213 219);
+
+        .e-kanban-header{
+                 background: transparent;   
+        }
+
+        .e-kanban-content{
+            background: transparent;
+
+            td{
+                background-color: rgb(243 244 246);
+            }
+        }
+    }
+}

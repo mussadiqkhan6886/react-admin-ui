@@ -1,13 +1,25 @@
-import { createContext, useState } from "react";
+import { createContext, useState, ReactNode, Dispatch, SetStateAction } from "react";
 
-export const MenuContext = createContext(false)
+type MenuContextType = {
+  menuBar: boolean;
+  setMenuBar: Dispatch<SetStateAction<boolean>>;
+};
 
-const ContextProvider = ({children} : any) => {
- const [menuBar, setMenuBar] = useState(true)
+export const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
-    return <MenuContext.Provider value={{menuBar, setMenuBar}}>
-        {children}
+type ContextProviderProps = {
+  children: ReactNode;
+};
+
+const ContextProvider = ({ children }: ContextProviderProps) => {
+  const [menuBar, setMenuBar] = useState<boolean>(true);
+  const 
+
+  return (
+    <MenuContext.Provider value={{ menuBar, setMenuBar }}>
+      {children}
     </MenuContext.Provider>
-}
+  );
+};
 
 export default ContextProvider

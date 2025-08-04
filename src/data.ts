@@ -39,12 +39,7 @@ export const menu = [
                 url: "/order",
                 icon: "/element.svg"
             },            
-            {
-                id: 4,
-                title: "Posts",
-                url: "/posts",
-                icon: "/post2.svg"
-            },            
+                      
         ]
     },
     {

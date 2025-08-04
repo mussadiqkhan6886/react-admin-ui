@@ -1,0 +1,59 @@
+@import "../../styles/responsive.scss";
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+li {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+b {
+  margin-right: 3px;
+}
+
+.demo-app {
+  display: flex;
+  min-height: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+
+  @include lg{
+    flex-direction: column;
+  }
+
+  &-sidebar {
+    width: 300px;
+    line-height: 1.5;
+    border-right: 1px solid #d3e2e8;
+
+      @include lg{
+       border-right: none;
+    }
+
+    &-section {
+      padding: 0.5em;
+    }
+  }
+
+  &-main {
+    flex-grow: 1;
+    padding: 1em;
+
+      @include md{
+        padding: 0.5em;
+    }
+  }
+}
+
+.fc {
+  max-width: 1100px;
+  margin: 0 auto;
+}

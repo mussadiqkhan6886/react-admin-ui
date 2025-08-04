@@ -15,6 +15,7 @@ import Order from "./pages/orders/Order"
 import Missing from "./pages/missing/Missing"
 import KanBan from "./pages/kanban/KanBan"
 import Calendar from "./pages/Calendar/Calendar"
+import About from "./pages/about/About"
 
 function App() {
 
@@ -67,6 +68,10 @@ function App() {
         {
           path: "/contact",
           element: <ContactUs />
+        },
+        {
+          path: "/about",
+          element: <About />
         },
         {
           path: "/order",
