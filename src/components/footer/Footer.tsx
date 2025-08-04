@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import "./footer.scss"
-import { MenuContext } from "../../Context/MenuContext";
+import { useMenuContext } from "../../hooks/MenuContext";
 
 const Footer = () => {
-   const {mode} = useContext(MenuContext)
+   const {mode} = useMenuContext()
   
     const light = {
       background: "rgb(200 212 200)",

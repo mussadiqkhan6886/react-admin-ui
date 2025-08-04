@@ -12,11 +12,7 @@ import { useParams } from "react-router-dom";
 import { useMenuContext } from "../../hooks/MenuContext";
 
 type InfoType = {
-  username: string;
-  fullname: string;
-  email: string;
-  phone: string;
-  status: string;
+  [key: string]: string | number | boolean;
 };
 
 type ChartType = {
@@ -39,7 +35,16 @@ type ItemType = {
   id: number;
   title: string;
   img: string;
-  price?: number;
+  lastName?: string;
+  firstName?: string;
+  email?: string;
+  phone?: string;
+  createdAt?: string;
+  verified?: boolean;
+  color?: string;
+  producer?: string;
+  inStock?: boolean;
+  price?: string | number;
   info: InfoType;
   chart?: ChartType;
   activities?: ActivityType[];
@@ -52,7 +57,7 @@ type Props = {
 const Single = ({ data }: Props) => {
   const { id } = useParams<{ id: string }>();
   const itemId = Number(id);
-  const item = data.find((i) => i.id === itemId);
+  const item = data.find((i : ItemType) => i.id === itemId);
 
   if (!item) return <div>Item not found</div>;
 
@@ -74,12 +79,12 @@ const Single = ({ data }: Props) => {
             <h1>{item.title}</h1>
           </div>
           <div className="details">
-            {Object.entries(item.info).map((itemValue) => (
-              <div className="item" key={itemValue[0]}>
-                <span className="itemTitle">{itemValue[0]}:</span>
-                <span className="itemValue">{itemValue[1]}</span>
-              </div>
-            ))}
+            {Object.entries(item.info).map(([key, value]) => (
+            <div className="item" key={key}>  
+              <span className="itemTitle">{key}:</span>
+              <span className="itemValue">{value}</span>
+            </div>
+          ))}
           </div>
         </div>
         <hr />
@@ -94,7 +99,7 @@ const Single = ({ data }: Props) => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                {item.chart.dataKeys.map((dataKey) => (
+                {item.chart.dataKeys.map((dataKey : any)  => (
                   <Line
                     key={dataKey.name}
                     type="monotone"
@@ -111,7 +116,7 @@ const Single = ({ data }: Props) => {
         <h2>Latest Activities</h2>
         {item.activities && (
           <ul>
-            {item.activities.map((activity) => (
+            {item.activities.map((activity : any) => (
               <li key={activity.text}>
                 <div>
                   <p>{activity.text}</p>

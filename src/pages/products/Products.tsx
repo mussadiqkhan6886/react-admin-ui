@@ -1,10 +1,10 @@
-import { useContext, useState } from "react"
+import { useState } from "react"
 import Add from "../../components/add/Add"
 import DataTable from "../../components/dataTable/DataTable"
 import { GridColDef } from "@mui/x-data-grid";
 import { allProducts } from "../../data";
 import "./products.scss"
-import { MenuContext } from "../../Context/MenuContext";
+import { useMenuContext } from "../../hooks/MenuContext";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 80 },
@@ -58,7 +58,7 @@ const Products = () => {
 
     const [open, setOpen] = useState(false)
 
-     const {mode} = useContext(MenuContext)
+     const {mode} = useMenuContext()
     
       const light = {
         background: "rgb(243 244 246)",

@@ -2,9 +2,9 @@ import { GridColDef } from "@mui/x-data-grid";
 import DataTable from "../../components/dataTable/DataTable"
 import "./users.scss"
 import { allUsers } from "../../data";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Add from "../../components/add/Add";
-import { MenuContext } from "../../Context/MenuContext";
+import { useMenuContext } from "../../hooks/MenuContext";
 
  const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 60 },
@@ -59,7 +59,7 @@ import { MenuContext } from "../../Context/MenuContext";
 const Users = () => {
 
   const [open, setOpen] = useState(false)
-  const {mode} = useContext(MenuContext)
+  const {mode} = useMenuContext()
 
   const light = {
     background: "white",
