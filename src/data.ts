@@ -7,13 +7,13 @@ export const menu = [
                 id: 1,
                 title: "Homepage",
                 url: "/",
-                icon: "/home.svg"
+                icon: "house"
             },
             {
                 id: 2,
                 title: "Profile",
                 url: "/profile",
-                icon: "/user.svg"
+                icon: "user"
             },            
         ]
     },
@@ -25,19 +25,19 @@ export const menu = [
                 id: 1,
                 title: "Users",
                 url: "/users",
-                icon: "/user.svg"
+                icon: "users"
             },
             {
                 id: 2,
                 title: "Products",
                 url: "/products",
-                icon: "/product.svg"
+                icon: "box-open"
             },            
             {
                 id: 3,
                 title: "Orders",
                 url: "/order",
-                icon: "/element.svg"
+                icon: "cart-shopping"
             },            
                       
         ]
@@ -50,13 +50,13 @@ export const menu = [
                 id: 1,
                 title: "Calendar",
                 url: "/calendar",
-                icon: "/calendar.svg"
+                icon: "calendar"
             },
             {
                 id: 2,
                 title: "Kanban",
                 url: "/kanban",
-                icon: "/backup.svg"
+                icon: "list-check"
             },                       
         ]
     },
@@ -68,24 +68,19 @@ export const menu = [
                 id: 1,
                 title: "Contact",
                 url: "/contact",
-                icon: "/note.svg"
+                icon: "address-book"
             },
             {
                 id: 2,
                 title: "About Us",
                 url: "/about",
-                icon: "/order.svg"
+                icon: "info"
             },            
             {
-                id: 3,
-                title: "Settings",
-                url: "/",
-                icon: "/setting.svg"
-            },{
               id: 4,
               title: "FAQ",
               url: "/faq",
-              icon: "/"
+              icon: "circle-question"
             }                   
         ]
     },

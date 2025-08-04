@@ -9,8 +9,7 @@ import {
 } from "recharts";
 import "./single.scss";
 import { useParams } from "react-router-dom";
-import { useContext } from "react";
-import { MenuContext } from "../../Context/MenuContext";
+import { useMenuContext } from "../../hooks/MenuContext";
 
 type InfoType = {
   username: string;
@@ -57,7 +56,7 @@ const Single = ({ data }: Props) => {
 
   if (!item) return <div>Item not found</div>;
 
-  const {mode} = useContext(MenuContext)
+  const {mode} =  useMenuContext()
 
   const light = {
     background: "rgb(243 244 246)",

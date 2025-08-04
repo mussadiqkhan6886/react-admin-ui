@@ -1,10 +1,9 @@
-import { useContext } from "react";
 import "./contact.scss";
-import { MenuContext } from "../../Context/MenuContext";
+import { useMenuContext } from "../../hooks/MenuContext";
 
 const ContactUs = () => {
 
-  const {mode} = useContext(MenuContext)
+  const {mode} =  useMenuContext()
   return (
     <main className="contact-container">
       <h1 style={mode == "light" ? {color: "black"} : {}}>Contact Us</h1>

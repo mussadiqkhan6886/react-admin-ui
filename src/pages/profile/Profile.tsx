@@ -9,13 +9,12 @@ import {
 } from "recharts";
 import { singleUser } from "../../data";
 import "./profile.scss";
-import { useContext } from "react";
-import { MenuContext } from "../../Context/MenuContext";
+import { useMenuContext } from "../../hooks/MenuContext";
 
 const Profile = () => {
   const item = singleUser;
 
-   const {mode} = useContext(MenuContext)
+   const {mode} = useMenuContext()
   
     const light = {
       background: "rgb(243 244 246)",

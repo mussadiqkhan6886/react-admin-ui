@@ -1,0 +1,76 @@
+.loginPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-image: url("./wallpaper.jpg");
+ background-position: center;
+ background-size: cover;
+  .loginBox {
+    background-color: rgba(255, 224, 230, 0.301);
+    backdrop-filter: blur(6px);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(179, 179, 179, 0.25);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      font-size: 33px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input {
+        padding: 0.75rem;
+        border-radius: 6px;
+        border-bottom: 1px solid gray;
+        color: white;
+        background: transparent;
+        font-size: 1rem;
+        
+        &::placeholder{
+            color: white
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        padding: 0.75rem;
+        border: none;
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.13);
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+         box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+      }
+    }
+
+    .forgot {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--textSoft);
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

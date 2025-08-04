@@ -45,6 +45,7 @@
                 background-color: $soft-bg;
                 border-radius: 40%;
                 cursor: pointer;
+                color: white
             }
         }
 
@@ -255,8 +256,7 @@
                         }
 
                         &:hover {
-                            background: #e2f6ff57;
-                            color: black;
+                            background: #61616157;
                         }
                         }
                     }
@@ -285,6 +285,44 @@
                 }
                 }
                         }
+    }
+
+    .settingMenu{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 40px 10px;
+        width: 250px;
+        background-color: rgb(219, 218, 218);
+        z-index: 100;
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        p{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .modeSetting{
+
+            div{
+                margin-bottom: 20px;
+
+                &:hover{
+                    cursor: pointer;
+                    text-decoration-line: underline;
+                }
+
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
     }
 
 }

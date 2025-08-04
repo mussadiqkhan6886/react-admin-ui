@@ -1,7 +1,7 @@
 import { GridColDef } from "@mui/x-data-grid"
 import "./add.scss"
-import React, { FormEvent, useContext } from "react"
-import { MenuContext } from "../../Context/MenuContext"
+import React, { FormEvent } from "react"
+import { useMenuContext } from "../../hooks/MenuContext"
 
 type Props = {
     slug: string,
@@ -16,7 +16,7 @@ const Add = (props: Props) => {
         e.preventDefault()
     }
 
-     const {mode} = useContext(MenuContext)
+     const {mode} = useMenuContext()
     
       const light = {
         background: "rgb(243 244 246)",

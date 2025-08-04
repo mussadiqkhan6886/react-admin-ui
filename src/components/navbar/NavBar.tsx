@@ -1,14 +1,15 @@
 import "./navbar.scss"
-import { useContext, useState } from "react"
+import { useState } from "react"
 import { notifications } from "../../data"
 import { Link } from "react-router-dom"
-import { MenuContext } from "../../Context/MenuContext"
+import { useMenuContext } from "../../hooks/MenuContext"
 
 const NavBar = () => {
   const [notification, setNotification] = useState(false)
   const [profile, setProfile] = useState(false)
-  const {menuBar, setMenuBar, mode, setMode, setting, setSetting} = useContext(MenuContext)
-
+  
+  const {menuBar, setMenuBar, mode, setMode} = useMenuContext()
+  const [setting, setSetting] = useState(false)
 
  const light = {
    background: "white",
@@ -26,14 +27,13 @@ const NavBar = () => {
         <img onClick={() => setMenuBar(!menuBar)} src="/logo.svg" alt="logo" />
         <span>MkAdmin</span>
       </div>
-      <div className="icons">
-        <img src="/search.svg" alt="icon search" className="icon" />
-        <img src="/app.svg" alt="app img" className="icon" />
-        <img src="/expand.svg" alt="expand img" className="icon" />
+      <div  className="icons">
+        <i className="fa-solid fa-search icon"></i>
+        <i className="fa-solid fa-expand icon"></i>
         <div className="notification">
-          <img onClick={() => {setNotification(!notification)
+          <i style={{cursor: "pointer"}} onClick={() => {setNotification(!notification)
             setProfile(false)
-          }} src="/notifications.svg" alt="notification logo" />
+          }} className="fa-solid fa-bell"></i>
           <span></span>
           {notification && (<div style={notDiv} className="notificationDiv">
             <div className="messages">
@@ -97,13 +97,22 @@ const NavBar = () => {
             </div>
           </div>)}
         </div>
-        <img src="/settings.svg" alt="setting" className="icon" />
+        <i style={{cursor: "pointer"}} className="fa-solid fa-gear" onClick={() => setSetting(true)}></i>
       </div>
       {setting && (
-        <div className="settingMenu">
+        <div style={mode == "dark" ? {color: "white", background: "navy"} : {}} className="settingMenu">
+          <h1>Choose Mode</h1>
+          <p onClick={() => setSetting(false)}>x</p>
           <div className="modeSetting">
             <div>
-
+              {/* icon */}
+              <i className="fa-solid fa-moon"></i>
+              <span onClick={() => setMode("dark")}> Dark Mode</span>
+            </div>
+            <div>
+              {/* icon */}
+              <i className="fa-solid fa-sun"></i>
+              <span onClick={() => setMode("light")}> Light Mode</span>
             </div>
           </div>
         </div>

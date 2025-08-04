@@ -16,12 +16,12 @@ import Missing from "./pages/missing/Missing"
 import KanBan from "./pages/kanban/KanBan"
 import Calendar from "./pages/Calendar/Calendar"
 import About from "./pages/about/About"
-import { useContext } from "react"
-import { MenuContext } from "./Context/MenuContext"
+import FAQ from "./pages/faq/FAQ"
+import { useMenuContext } from "./hooks/MenuContext"
 
 function App() {
 
-   const {mode} = useContext(MenuContext)
+   const {mode} = useMenuContext()
   
     const light = {
       background: "rgb(243 244 246)",
@@ -95,6 +95,10 @@ function App() {
         {
           path: "/calendar",
           element: <Calendar />
+        },
+        {
+          path: "/faq",
+          element: <FAQ />
         },
         {
           path: "*",

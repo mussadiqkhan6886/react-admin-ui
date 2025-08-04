@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom"
 import "./menu.scss"
 import {menu} from "../../data"
-import { useContext } from "react"
-import { MenuContext } from "../../Context/MenuContext"
+import { useMenuContext } from "../../hooks/MenuContext"
 
 const Menu = () => {
 
@@ -19,7 +18,7 @@ const Menu = () => {
     listItems: ListItem[]
   }
 
-  const {menuBar, mode} = useContext(MenuContext)
+  const {menuBar, mode} = useMenuContext()
 
  const light = {
     background: "white",
@@ -34,7 +33,7 @@ const Menu = () => {
         <span style={mode == "light" ? {color: "black"} : {}}  className="title">{item.title.toUpperCase()}</span>
         {item.listItems.map((listItem: ListItem) => (
           <Link to={`${listItem.url}`} key={listItem.id} className={`${mode === "light" ? "light" : "listItem"} mutual`}>
-            <img src={listItem.icon} alt="icon" />
+            <i className={`fa-solid fa-${listItem.icon}`}></i>
             <span className="listItemTitle">{listItem.title}</span>
           </Link>
         ))}

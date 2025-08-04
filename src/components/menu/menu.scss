@@ -38,6 +38,12 @@
                     display: none;
                 }
             }
+
+            // i{
+            //     width: 30px;
+            //     height: 30px;
+            //     color: black;
+            // }
             
         }
 
@@ -53,7 +59,7 @@
         .light{
 
             &:hover{
-                background-color: gray
+                background-color:rgb(229 231 235);
             }
 
         }
