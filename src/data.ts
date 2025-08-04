@@ -78,10 +78,15 @@ export const menu = [
             },            
             {
                 id: 3,
-                title: "Forms",
+                title: "Settings",
                 url: "/",
-                icon: "/form.svg"
-            },                   
+                icon: "/setting.svg"
+            },{
+              id: 4,
+              title: "FAQ",
+              url: "/faq",
+              icon: "/"
+            }                   
         ]
     },
 ]

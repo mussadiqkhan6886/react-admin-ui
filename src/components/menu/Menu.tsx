@@ -19,14 +19,21 @@ const Menu = () => {
     listItems: ListItem[]
   }
 
-  const {menuBar} = useContext(MenuContext)
+  const {menuBar, mode} = useContext(MenuContext)
+
+ const light = {
+    background: "white",
+    color: "black"
+  }
+
+  const navbarStyle = mode === "dark" ? {} : light;
   return (
-    menuBar && (<div className="menu">
+    menuBar && (<div style={navbarStyle} className="menu">
       {menu.map((item: Item) => (
       <div key={item.id} className="item">
-        <span className="title">{item.title.toUpperCase()}</span>
+        <span style={mode == "light" ? {color: "black"} : {}}  className="title">{item.title.toUpperCase()}</span>
         {item.listItems.map((listItem: ListItem) => (
-          <Link to={`${listItem.url}`} key={listItem.id} className="listItem">
+          <Link to={`${listItem.url}`} key={listItem.id} className={`${mode === "light" ? "light" : "listItem"} mutual`}>
             <img src={listItem.icon} alt="icon" />
             <span className="listItemTitle">{listItem.title}</span>
           </Link>

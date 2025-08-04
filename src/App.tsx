@@ -16,14 +16,25 @@ import Missing from "./pages/missing/Missing"
 import KanBan from "./pages/kanban/KanBan"
 import Calendar from "./pages/Calendar/Calendar"
 import About from "./pages/about/About"
+import { useContext } from "react"
+import { MenuContext } from "./Context/MenuContext"
 
 function App() {
+
+   const {mode} = useContext(MenuContext)
+  
+    const light = {
+      background: "rgb(243 244 246)",
+      color: "black"
+    }
+  
+    const navbarStyle = mode === "dark" ? {} : light;
 
   const Layout = () => {
     return (
       <div className="main">
         <NavBar />
-        <div className="container">
+        <div style={navbarStyle} className="container">
           <div className="menuContainer">
             <Menu />
           </div>

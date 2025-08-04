@@ -9,12 +9,23 @@ import {
 } from "recharts";
 import { singleUser } from "../../data";
 import "./profile.scss";
+import { useContext } from "react";
+import { MenuContext } from "../../Context/MenuContext";
 
 const Profile = () => {
   const item = singleUser;
 
+   const {mode} = useContext(MenuContext)
+  
+    const light = {
+      background: "rgb(243 244 246)",
+      color: "black"
+    }
+  
+    const navbarStyle = mode === "dark" ? {} : light;
+
   return (
-    <div className="single">
+    <div style={navbarStyle} className="single">
       <div className="view">
         <div className="info">
           <div className="topInfo">

@@ -2,8 +2,9 @@ import { GridColDef } from "@mui/x-data-grid";
 import DataTable from "../../components/dataTable/DataTable"
 import "./users.scss"
 import { allUsers } from "../../data";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Add from "../../components/add/Add";
+import { MenuContext } from "../../Context/MenuContext";
 
  const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 60 },
@@ -58,9 +59,17 @@ import Add from "../../components/add/Add";
 const Users = () => {
 
   const [open, setOpen] = useState(false)
+  const {mode} = useContext(MenuContext)
+
+  const light = {
+    background: "white",
+    color: "black"
+  }
+
+  const navbarStyle = mode === "dark" ? {} : light;
 
   return (
-    <div className="users">
+    <div style={navbarStyle} className="users">
       <div className="info">
         <h1>Users</h1>
         <button onClick={() => setOpen(true)}>Add New Users</button>

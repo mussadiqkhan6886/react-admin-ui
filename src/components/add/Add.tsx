@@ -1,6 +1,7 @@
 import { GridColDef } from "@mui/x-data-grid"
 import "./add.scss"
-import React, { FormEvent } from "react"
+import React, { FormEvent, useContext } from "react"
+import { MenuContext } from "../../Context/MenuContext"
 
 type Props = {
     slug: string,
@@ -15,9 +16,18 @@ const Add = (props: Props) => {
         e.preventDefault()
     }
 
+     const {mode} = useContext(MenuContext)
+    
+      const light = {
+        background: "rgb(243 244 246)",
+        color: "black"
+      }
+    
+      const navbarStyle = mode === "dark" ? {} : light;
+
   return (
     <div className="add">
-      <div className="modal">
+      <div style={navbarStyle} className="modal">
         <span onClick={() => props.setOpen(false)} className="close">X</span>
         <h1>Add New {props.slug}</h1>
         <form onSubmit={handleSubmit}>

@@ -6,38 +6,49 @@ import BarChartBox from "../../components/barChartBox/BarChartBox"
 import PieChartBox from "../../components/pieChartBox/PieChartBox"
 import BigChartBox from "../../components/bigChartBox/BigChartBox"
 import ChartRadar from "../../components/radarChart/ChartRadar"
+import { useContext } from "react"
+import { MenuContext } from "../../Context/MenuContext"
+
 
 const Home = () => {
+  const light = {
+    background: "whitesmoke",
+    color: "black"
+  }
+
+  
+  const {mode} = useContext(MenuContext)
+  const navbarStyle = mode === "dark" ? {} : light;
   return (
-    <div className='home'>
-     <div className="box box1">
+    <div style={navbarStyle} className='home'>
+     <div className={`${mode === "light" ? "light" : "box"}  box1`}>
         <TopBox />
      </div>
-     <div className="box box2">
+     <div className={`${mode === "light" ? "light" : "box"} box2`}>
       <ChartBox {...chartBoxUser} />
      </div>
-     <div className="box box3">
+     <div className={`${mode === "light" ? "light" : "box"} box3`}>
       <ChartBox {...chartBoxProduct} />
      </div>
-     <div className="box box4">
+     <div className={`${mode === "light" ? "light" : "box"} box4`}>
       <PieChartBox />
      </div>
-     <div className="box box5">
+     <div className={`${mode === "light" ? "light" : "box"} box5`}>
       <ChartBox {...chartBoxConversion} />
      </div>
-     <div className="box box6">
+     <div className={`${mode === "light" ? "light" : "box"} box6`}>
       <ChartBox {...chartBoxRevenue} />
       </div>
-     <div className="box box7">
+     <div className={`${mode === "light" ? "light" : "box"} box7`}>
       <BigChartBox />
      </div>
-     <div className="box box8">
+     <div className={`${mode === "light" ? "light" : "box"} box8`}>
       <BarChartBox {...barChartBoxVisit} />
      </div>
-     <div className="box box9">
+     <div className={`${mode === "light" ? "light" : "box"} box9`}>
       <BarChartBox {...barChartBoxRevenue} />
      </div>
-     <div className="box box10">
+     <div className={`${mode === "light" ? "light" : "box"} box10`}>
       <ChartRadar />
      </div>
     </div>

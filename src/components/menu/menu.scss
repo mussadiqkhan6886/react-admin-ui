@@ -24,7 +24,7 @@
             }
         }
 
-        .listItem{
+        .mutual{
             display: flex;
             align-items: center;
             gap: 10px;
@@ -32,16 +32,30 @@
             border-radius: 5px;
             font-size: 14px;
 
-            &:hover{
-                background-color: $soft-bg
-            }
- 
-            .listItemTitle{
+             .listItemTitle{
 
                 @include lg{
                     display: none;
                 }
             }
+            
+        }
+
+        .listItem{
+
+            &:hover{
+                background-color: $soft-bg
+            }
+ 
+           
+        }
+
+        .light{
+
+            &:hover{
+                background-color: gray
+            }
+
         }
     }
 }

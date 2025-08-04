@@ -3,6 +3,10 @@ import { createContext, useState, ReactNode, Dispatch, SetStateAction } from "re
 type MenuContextType = {
   menuBar: boolean;
   setMenuBar: Dispatch<SetStateAction<boolean>>;
+  mode: string;
+  setMode: Dispatch<SetStateAction<string>>
+  setting: boolean;
+  setSetting: Dispatch<SetStateAction<boolean>>;
 };
 
 export const MenuContext = createContext<MenuContextType | undefined>(undefined);
@@ -13,10 +17,11 @@ type ContextProviderProps = {
 
 const ContextProvider = ({ children }: ContextProviderProps) => {
   const [menuBar, setMenuBar] = useState<boolean>(true);
-  const 
+  const [mode, setMode] = useState("light")
+  const [setting, setSetting] = useState(false)
 
   return (
-    <MenuContext.Provider value={{ menuBar, setMenuBar }}>
+    <MenuContext.Provider value={{ menuBar, setMenuBar, mode, setMode, setting, setSetting }}>
       {children}
     </MenuContext.Provider>
   );

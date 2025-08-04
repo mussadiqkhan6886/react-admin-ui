@@ -28,12 +28,6 @@ a {
   color: $main-color;
   overflow-x: hidden;
 }
-.main-light{
-  font-family: "Inter", sans-serif;
-  background-color: $light-main-bg;
-  color: $light-main-color;
-  overflow-x: hidden;
-}
 
 .container{
   display: flex;
@@ -41,10 +35,7 @@ a {
 }
 .menuContainer{
   width: 200px;
-  padding: 5px;
   padding-left: 10px;
-  border-right: 2px solid $soft-bg;
-
   @include lg{
     width: max-content ;
   }

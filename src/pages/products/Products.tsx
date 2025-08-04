@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import Add from "../../components/add/Add"
 import DataTable from "../../components/dataTable/DataTable"
 import { GridColDef } from "@mui/x-data-grid";
 import { allProducts } from "../../data";
 import "./products.scss"
+import { MenuContext } from "../../Context/MenuContext";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 80 },
@@ -57,8 +58,17 @@ const Products = () => {
 
     const [open, setOpen] = useState(false)
 
+     const {mode} = useContext(MenuContext)
+    
+      const light = {
+        background: "rgb(243 244 246)",
+        color: "black"
+      }
+    
+      const navbarStyle = mode === "dark" ? {} : light;
+
   return (
-    <div className="product">
+    <div style={navbarStyle} className="product">
       <div className="info">
         <h1>Product</h1>
         <button onClick={() => setOpen(true)}>Add New Products</button>

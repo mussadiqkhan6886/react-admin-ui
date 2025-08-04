@@ -2,6 +2,8 @@ import { GridColDef } from "@mui/x-data-grid";
 import { orders } from "../../data";
 import "./order.scss"
 import OrderTable from "../../components/orderTable/OrderTable";
+import { useContext } from "react";
+import { MenuContext } from "../../Context/MenuContext";
 
 const columns: GridColDef[] = [
   {
@@ -52,8 +54,17 @@ const columns: GridColDef[] = [
 
 const Order = () => {
 
+   const {mode} = useContext(MenuContext)
+  
+    const light = {
+      background: "rgb(243 244 246)",
+      color: "black"
+    }
+  
+    const navbarStyle = mode === "dark" ? {} : light;
+
   return (
-    <div className="product">
+    <div style={navbarStyle} className="product">
       <div className="info">
         <h1>Orders</h1>
       </div>

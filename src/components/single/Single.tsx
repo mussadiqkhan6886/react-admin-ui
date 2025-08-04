@@ -9,6 +9,8 @@ import {
 } from "recharts";
 import "./single.scss";
 import { useParams } from "react-router-dom";
+import { useContext } from "react";
+import { MenuContext } from "../../Context/MenuContext";
 
 type InfoType = {
   username: string;
@@ -55,8 +57,17 @@ const Single = ({ data }: Props) => {
 
   if (!item) return <div>Item not found</div>;
 
+  const {mode} = useContext(MenuContext)
+
+  const light = {
+    background: "rgb(243 244 246)",
+    color: "black"
+  }
+
+  const navbarStyle = mode === "dark" ? {} : light;
+
   return (
-    <div className="single">
+    <div style={navbarStyle} className="single">
       <div className="view">
         <div className="info">
           <div className="topInfo">
